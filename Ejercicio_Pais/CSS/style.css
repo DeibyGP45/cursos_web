@@ -11,3 +11,7 @@ h1, p {
 strong {
         /* display: block; */
     }
+    img{
+        display:block;
+        margin:auto;
+        }
