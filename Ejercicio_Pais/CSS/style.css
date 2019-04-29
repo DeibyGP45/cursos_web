@@ -2,7 +2,10 @@ h1, p {
             
     /* display: inline; */
     font-family: Calibri;
+    font-weight: bolder;
     }
+
+h1 {text-align: center;}
 
  body {
 
@@ -10,8 +13,19 @@ h1, p {
  }
 strong {
         /* display: block; */
+        color: blue;
     }
     img{
         display:block;
         margin:auto;
         }
+#principal {
+
+    font-style: oblique;
+    color: brown;
+}
+.destacado {
+
+    font-style: italic;
+    color: green;
+}
