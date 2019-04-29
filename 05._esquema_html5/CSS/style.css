@@ -1,0 +1,20 @@
+.main_header {
+
+    background-color: #657153;
+    color: #99C24D;
+    font-family: calibri;
+    padding: 0.3rem;
+
+}
+
+.main_footer {
+
+    font-family: calibri;
+    background-color: #5B618A;
+    color: #9EADC8;
+    padding: 1rem;
+}
+
+body {
+    background-color: #CF9893
+}
