@@ -4,8 +4,10 @@ h1, p {
     font-family: Calibri;
     }
 
-    strong {
+ body {
 
-        font-weight: normal;
+    background-color: antiquewhite
+ }
+strong {
         /* display: block; */
     }
