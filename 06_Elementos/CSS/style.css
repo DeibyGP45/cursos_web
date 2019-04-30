@@ -1,0 +1,30 @@
+body {
+
+    font-family: Verdana;
+    background-image: linear-gradient(antiquewhite, rgb(223, 155, 140));
+}
+
+
+.main_header {
+    background-color: #EC7357;
+    color: white;
+    font-family: calibri;
+    padding: 0.3rem;
+}
+
+.main_footer {
+
+    font-family: calibri;
+    background-color: #6A2E35;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.margen { margin: 1rem 3rem}
+
+img { max-width: 100%;}
+
+.image_wrapper {
+    text-align: center
+}

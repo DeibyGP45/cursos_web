@@ -15,6 +15,19 @@
     padding: 1rem;
 }
 
+.section_footer {
+
+    font-family: calibri;
+    color: #9EADC8;
+    padding: 1rem;
+    border-top: 3px solid;
+}
+
+.importante {
+
+    font-weight: bold;
+}
+
 body {
-    background-color: #CF9893
+    background-color: #BEEF9E
 }
