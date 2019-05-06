@@ -28,7 +28,17 @@
             <p>Esto trata de elementos de seccionado, que son los que se reflejan en el esquema o outline de la
                 pagina.</p>
             <p>Inicialmente estos elementos incluían body y los encabezados (h1-h6) </p>
-            <p>En HTML5 se ña den los nuevos elementos semánticos: header, nav, footer, section, article, aside </p>
+            <p>En HTML5 se ña den los nuevos elementos semánticos:
+
+                <Ul>
+                    <li>section</li>
+                    <li>header</li>
+                    <li>footer</li>
+                    <li>nav</li>
+                    <li>article</li>
+                    <li>aside</li>
+                </Ul>
+            </p>
 
             <section id="section">
                 <h3>Etiqueta Sections</h3>
@@ -49,38 +59,74 @@
 
             <section id="header">
                 <h3>Etiqueta header</h3>
-                <p>El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de
+                <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header">El elemento de HTML
+                    Header (&lt;header&gt;) representa un grupo de ayudas introductorias
+                    o de
                     navegación . Puede contener algunos elementos de encabezado, pero también otros elementos como
                     un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas
-                    parecidas.</p>
+                    parecidas.
+
+                    <footer>
+                        <cite>
+                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header">
+                                https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header</a>
+                        </cite>
+                    </footer>
+                </blockquote>
             </section>
 
             <section id="footer">
 
                 <h3>Etiqueta footer</h3>
-                <p>El Elemento HTML Footer (&lt;footer&gt;) representa un pie de página para el contenido de sección
+                <blockquote>El Elemento HTML Footer (&lt;footer&gt;) representa un pie de página para el contenido de
+                    sección
                     más cercano o el elemento raíz de sección (p.e, su ancestro mas cercano article, aside, nav,
                     section, blockquote, body, details, fieldset, figure, td). Un pie de página típicamente contiene
                     información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos
-                    relacionados</p>
+                    relacionados
+
+                    <footer>
+                        <cite>
+                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer">
+                                https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer</a>
+                        </cite>
+                    </footer>
+
+                </blockquote>
             </section>
 
             <section id="nav">
                 <h3>Etiqueta nav</h3>
-                <p>La MDN indica que esta etiqueta crea un menú de navegación (https://developer.mozilla.org).
+                <blockquote>La MDN indica que esta etiqueta crea un menú de navegación (https://developer.mozilla.org).
                     El elemento HTML &lt;nav&gt; representa una sección de una página cuyo propósito es proporcionar
                     enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes
-                    de secciones de navegación son menús, tablas de contenido e índices.</p>
+                    de secciones de navegación son menús, tablas de contenido e índices.</blockquote>
+
+                <footer>
+                    <cite>
+                        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav">
+                            https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav</a>
+                    </cite>
+                </footer>
+
             </section>
             <section id="aside">
                 <h3>Etiqueta aside</h3>
-                <p>El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en
+                <blockquote>El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en
                     contenido que está <em>tangencialmente relacionado</em> con el contenido que le rodea, que
                     podría ser
                     considerado independiente de ese contenido. Estas secciones son a menudo representadas como
                     barras laterales o como inserciones y contienen una explicación al margen como una definición de
                     glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en
-                    aplicaciones web, la información de perfil o enlaces a blogs relacionados.</p>
+                    aplicaciones web, la información de perfil o enlaces a blogs relacionados.
+
+                    <footer>
+                        <cite>
+                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/aside">
+                                https://developer.mozilla.org/es/docs/Web/HTML/Elemento/aside</a>
+                        </cite>
+                    </footer>
+                </blockquote>
             </section>
 
 
@@ -101,19 +147,78 @@
             widget interactivo o gadget, o cualquier otro elemento independiente del contenido</p>
     </section>
     <section>
-        <header>
-            <h2>Grouping content</h2>
-            <p></p>
-        </header>
+
+        <h2>Grouping content</h2>
+        <blockquote>Son etiquetas que por defecto tienen un display bloque, pero no contribuyen al
+            <strong>esquema</strong>
+            (outline) de la pagina</blockquote>
+
+        <footer>
+            <cite>
+                <a href="http://desarrolloweb.dlsi.ua.es/libros/html-css/los-elementos-blockquote-cite-q">
+                    http://desarrolloweb.dlsi.ua.es/libros/html-css/los-elementos-blockquote-cite-q</a>
+            </cite>
+        </footer>
+
+        <section>
+
+            <h3>Párrafo</h3>
+            <p>se pueden crear párrafos con las etiquetas: p, pre y blockquote</p>
+            <p>ejemplo de un párrafo preformateado </p>
+            <pre>
+                Esto esta dentro de 
+                la etiqueta pre.
+            </pre>
+
+            <p>Se puede usar para fragmento de código</p>
+            <pre>
+                    let x = 25
+                    let x = 24
+                    let z = x + y
+
+            </pre>
+
+            <P>La etiqueta &lt;blockquote&gt; se utiliza para crear citas literales en bloque, tal como hemos hecho
+                anteriormente </P>
+
+        </section>
+
+        <section>
+            <h3>Listas</h3>
+            <p>Existen 3 tipos de listas</p>
+
+            <dl>ul</dl><dd>desordenadas</dd>
+            <dl>ol</dl><dd>ordenadas</dd>
+            <dl>dl</dl><dd>de definiciones</dd>
+
+            <div class="clearfix"></div>
+                <p>Ejemplo de lista ordenada</p>
+                <ol>
+                    <li>Lunes</li>
+                    <li>Martes</li>
+                    <li>Miércoles</li>
+                    <li>Jueves</li>
+                    <li>Viernes</li>
+                    <li>Sábado</li>
+                    <li>Domingo</li>
+                </ol>
+
+                <p>Ejemplo de lista definiciones largas</p>
+
+                <dl>
+                    <dt>boli bic</dt> <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus maxime repudiandae provident porro, sequi cumque consequatur nostrum nobis vitae, odit aliquid necessitatibus in eos labore quae inventore voluptates esse. Voluptate.</dd>
+                    <dt>Pilot</dt> <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis optio illo, dolore officiis quia, hic, sunt consectetur eius neque assumenda ipsa unde natus soluta expedita corrupti quidem repellendus impedit minima.</dd>
+                </dl>
+
+            
+
+        </section>
 
     </section>
     <section>
         <header>
             <h2>Text-level semantics</h2>
         </header>
-    </section>
-    </div>
-
     </section>
     <footer class="main_footer"> David gp
 

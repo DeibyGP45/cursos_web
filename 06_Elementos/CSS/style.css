@@ -28,3 +28,34 @@ img { max-width: 100%;}
 .image_wrapper {
     text-align: center
 }
+blockquote {
+
+    margin-left: 0;
+    margin-right: 0;
+    font-style: italic;
+    padding-left: 1rem;
+    border-left: 4px solid rgb(170, 21, 21);
+}
+
+blockquote footer {
+    width: fit-content;
+    margin-top: 0.5rem;
+    border-top: 1px solid #6A2E35;
+    padding-top: 0.3rem;
+}
+
+ol {list-style-type: disc }
+
+ul { list-style-type: decimal }
+
+.clearfix {clear: both;}
+
+    dl{
+    float: left;
+    clear: left;
+}
+
+    dd {
+        float: left;
+        clear: both;
+    }
