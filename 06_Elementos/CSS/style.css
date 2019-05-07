@@ -59,3 +59,7 @@ ul { list-style-type: decimal }
         float: left;
         clear: both;
     }
+
+    footer a {
+        color: #EC7357
+    }
