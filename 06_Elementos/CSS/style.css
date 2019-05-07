@@ -21,7 +21,7 @@ body {
     text-align: center;
 }
 
-.margen { margin: 1rem 3rem}
+.content_wrapper { margin: 1rem 3rem}
 
 img { max-width: 100%;}
 
@@ -44,7 +44,7 @@ blockquote footer {
     padding-top: 0.3rem;
 }
 
-ol {list-style-type: disc }
+/* ol {list-style-type: disc } */
 
 ul { list-style-type: decimal }
 
@@ -62,4 +62,21 @@ ul { list-style-type: decimal }
 
     footer a {
         color: #EC7357
+    }
+
+    .main_footer p {
+margin-bottom: 0;
+
+    }
+
+    .verde {
+
+        color: greenyellow;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration: line-through;
+    }
+    
+    .main_header strong {
+        font-weight: normal;
     }
