@@ -50,12 +50,38 @@
                     </li>
                     <li>Elementos de navegación gráficos</li>
                 </ul>
-                <section class="seccion_imagenes">
+                <section>
                     <h3>Imágenes</h3>
-                
-                    <img src="./assets/komodo.jpg" alt="Varano de komodo">
+                <div class="seccion_imagenes">
+                    <!-- <img src="./assets/komodo.jpg" alt="Varano de komodo"> -->
                     <img src="./assets/varanococodrilo1.png" alt="">
                     <img src="./assets/ardilla.gif" alt="">
+                    <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="barcas">
+                    <div class="clearfix"></div>
+                    <p>uso de imagenes responsive en HTML</p>
+                </div>
+                    <div class="fija_300">
+
+                            <img srcset="./assets/komodo.300.jpg 300w,
+                                        ./assets/komodo.400.jpg 400w,
+                                        ./assets/komodo.500.jpg 500w,
+                                        ./assets/komodo.jpg 600w"
+                                sizes="(max-width: 300px),
+                                        (max-width: 400px),
+                                        (max-width: 500px)"
+                                 src="./assets/komodo.jpg" alt="Varano de komodo">
+
+                    </div>
+
+                    <picture>
+                        <source media="(max-width: 350px)" srcset="./assets/Husky_300v.png" type="image/png" >
+                        <source media="(max-width: 400px)" srcset="./assets/Husky_400.png" type="image/png">
+                        <source media="(max-width: 500px)" srcset="./assets/Husky_500.png" type="image/png">
+                        <source media="(max-width: 600px)" srcset="./assets/Husky_600.png" type="image/png">
+                        <img src="./assets/Husky_1024.png" alt="Husky siberiano">
+
+                    </picture>
+
                 </section>
                     <div class="clearfix"></div>
                 <section class="sección_video">

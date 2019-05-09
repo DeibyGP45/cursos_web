@@ -55,7 +55,7 @@ margin-bottom: 0;
 
 img {
     max-width: 100%;
-    display: inline-block
+    /* display: inline-block */
 }
 
 .seccion_imagenes img {
@@ -79,6 +79,8 @@ img {
 .imagen_wrapper_75{
     width: 75%
 }
+
+.fija_300 {}
 
 blockquote {
 
