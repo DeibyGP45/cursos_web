@@ -53,11 +53,33 @@ margin-bottom: 0;
 
 .content_wrapper { margin: 1rem 3rem}
 
-img { max-width: 100%;}
+img {
+    max-width: 100%;
+    display: inline-block
+}
+
+.seccion_imagenes img {
+
+    max-width: 25%;
+    display:block;
+    float: left;
+}
 
 .image_wrapper {
     text-align: center
 }
+
+
+.imagen_wrapper_25{
+    width: 25%
+}
+.imagen_wrapper_50{
+    width: 50%
+}
+.imagen_wrapper_75{
+    width: 75%
+}
+
 blockquote {
 
     margin-left: 0;
