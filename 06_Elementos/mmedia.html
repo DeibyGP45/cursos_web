@@ -57,6 +57,11 @@
                     <img src="./assets/varanococodrilo1.png" alt="">
                     <img src="./assets/ardilla.gif" alt="">
                     <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="barcas">
+                    <img src="./assets/WoodElf.png" alt="Elfo">
+                    <img src="./assets/005.gif" alt="Gif animado">
+                    <img 
+                    srcset="./assets/logo.svg"
+                    src="./assets/logo.gif" alt="logo">
                     <div class="clearfix"></div>
                     <p>uso de imagenes responsive en HTML</p>
                 </div>
@@ -72,7 +77,6 @@
                                  src="./assets/komodo.jpg" alt="Varano de komodo">
 
                     </div>
-
                     <picture>
                         <source media="(max-width: 350px)" srcset="./assets/Husky_300v.png" type="image/png" >
                         <source media="(max-width: 400px)" srcset="./assets/Husky_400.png" type="image/png">
@@ -81,13 +85,45 @@
                         <img src="./assets/Husky_1024.png" alt="Husky siberiano">
 
                     </picture>
+                    <p>La picture y los formatos alternativos de imágenes </p>
+                    <picture>
+                    <source srcset="./assets/tropical-sunrise.webp" type="image/webp">
+                        <img src="./assets/tropical-sunrise.jpg" alt="Amanecer tropical">
+                    </picture>
+                    <picture>
+                        <source srcset="./assets/logo.svg" type="image/svg+xml">
+                            <img src="./assets/logo.gif" alt="logo">
+                    </picture>
+                    <p>Etiqueta figure</p>
+                    <figure>
+                        <img src="./assets/Husky_600.png" alt="">
+                        <figcaption>A que es mono</figcaption>
+                    </figure>
 
                 </section>
                     <div class="clearfix"></div>
                 <section class="sección_video">
                     <h3>Video y Audio</h3>
+                    <p>Es posible incluir un video desde una fuente externa</p>
 
+                    <div class="embed-container">
+                      <iframe src="https://www.youtube.com/embed/vpn8UUkfj6A" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <p>Otra opción es reproducir videos de nuestro servidor</p>
+                    <video srcset="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm"
+                    src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4" controls>
+                    </video>
+
+                    <audio src="./assets/Calvin Harris, Dua Lipa - One Kiss [www.slider.kz].mp3" controls></audio>
                 </section>
+                <aside >
+
+                    <h3>elementos embebidos no multimedia</h3>
+                    <p>La etiqueta iframe permite acceder a otra web desde la nuestra</p>
+                    <iframe class="web_externa" src="https://www.tajamar.es/"></iframe>
+                </aside>
+
                 <section class="sección_gráficos">
                     <h3>Elementos de navegación gráficos</h3>
                 </section>
