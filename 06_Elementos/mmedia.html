@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Multimedia - Elementos de la web</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
@@ -71,9 +73,9 @@
                                         ./assets/komodo.400.jpg 400w,
                                         ./assets/komodo.500.jpg 500w,
                                         ./assets/komodo.jpg 600w"
-                                sizes="(max-width: 300px),
-                                        (max-width: 400px),
-                                        (max-width: 500px)"
+                                sizes ="(max-width: 300px) 300px,
+                                        (max-width: 400px) 400px,
+                                        (max-width: 500px) 500px"
                                  src="./assets/komodo.jpg" alt="Varano de komodo">
 
                     </div>
@@ -111,21 +113,40 @@
                     </div>
 
                     <p>Otra opción es reproducir videos de nuestro servidor</p>
-                    <video srcset="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm"
-                    src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4" controls>
+                    <video controls>
+                       <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
+                        <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
                     </video>
 
-                    <audio src="./assets/Calvin Harris, Dua Lipa - One Kiss [www.slider.kz].mp3" controls></audio>
+                    <audio src="./assets/DuaLipa_OneKiss.mp3" controls></audio>
                 </section>
-                <aside >
+                <aside>
 
                     <h3>elementos embebidos no multimedia</h3>
                     <p>La etiqueta iframe permite acceder a otra web desde la nuestra</p>
                     <iframe class="web_externa" src="https://www.tajamar.es/"></iframe>
+
+                    <p>Otras formas de insertar contenido externo son object y embed</p>
+
+                    <p>object</p>
+
+                    <object data="https://www.tajamar.es/" type="text/html"></object>
+
+                    <p>embed</p>
+
+                    <embed src="https://www.tajamar.es/" type="text/html">
+
                 </aside>
+
 
                 <section class="sección_gráficos">
                     <h3>Elementos de navegación gráficos</h3>
+                    <p>En HTML antiguo se usaba la etiqueta map para definir un hotspot</p>
+                    <p>En HTML5 se puede conseguir este efecto usando .svg</p>
+
+                    <embed src="./assets/logo.svg" type="image/svg+xml">
+                        <p>también relacionado con la navegacion grafica estaria el uso de iconos en los menus</p>
+
                 </section>
             </section>
         </main>
@@ -145,8 +166,15 @@
                 </a>
             </p>
         </address>
-
-
+        <aside>
+                <ul>
+                        <li><a href="https://www.facebook.com/" rel="external"><i class="fab fa-facebook-square" title="Facebook"></i></a></li>
+                        <li><a href="https://linkedin.com/" rel="external" title="Linkedin"><i class="fab fa-linkedin"></i></a> </li>
+                        <li> <a href="https://twitter.com" rel="external" title="Twitter"><i class="fab fa-twitter-square"></i></a> </li>
+                        <li> <a href="https://github.com/DeibyGP45/cursos_web"><i class="fab fa-github-square" title="GitHub"></i></a> </li>
+                </ul>
+                          
+             </aside>
     </footer>
 </body>
 
