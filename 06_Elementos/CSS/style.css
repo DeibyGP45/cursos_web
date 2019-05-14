@@ -195,3 +195,34 @@ video, embed {
       text-align: right;
       font-size: 1.5rem;
   }
+
+  table {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+  }
+  
+  .main_table {
+    width: 100%;
+    
+  }
+
+    .main_table>tbody>tr:nth-last-of-type(even) {
+      background-color: #EC7357
+  }
+  .main_table>tbody>tr:nth-last-of-type(odd) {
+    background-color: antiquewhite
+}
+
+.main_table>thead {
+    background-color: 
+}
+
+.sub_table>tbody>tr:nth-last-of-type(even) {
+    color: #6A2E35
+}
+
+.sub_table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
