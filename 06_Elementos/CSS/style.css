@@ -60,7 +60,10 @@ margin-bottom: 0;
 
 
 
-.content_wrapper { margin: 1rem 3rem}
+.content_wrapper {
+    margin: 1rem 3rem;
+
+}
 
 img {
     max-width: 100%;
@@ -196,7 +199,9 @@ video, embed {
       font-size: 1.5rem;
   }
 
-  
+  /* Tablas */
+
+
   .main_table, .viajes_table {
     width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -218,17 +223,18 @@ video, embed {
     margin-right: auto
 }
 
-
   .viajes_table th {
   border: 1px solid #6A2E35;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   }
-
-  .viajes_table>tbody>tr:nth-last-of-type(even) {
-    background-color: antiquewhite
+ 
+  .viajes_table>tbody>tr:nth-last-of-type(even) td{
+    background-color: antiquewhite;
+    text-align: center
 }
 
-.viajes_table>tbody>tr:nth-last-of-type(odd) {
-    background-color: coral
+.viajes_table>tbody>tr:nth-last-of-type(odd) td{
+    background-color: coral;
+    text-align: center
 }
