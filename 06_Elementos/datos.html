@@ -209,12 +209,12 @@
                                 <legend>Datos personales</legend>
                             <label for="userName" class="form_label">Nombre</label>
 
-                            <input type="text" name="userName" id="userName" class="form_control" placeholder="Escribe tu nombre">
+                            <input type="text" name="userName" id="userName" class="form_control" placeholder="Escribe tu nombre" required>
 
 
                             <label for="userPasswd" class="form_label">Contraseña</label>
 
-                            <input type="password" name="userPasswd" id="userPasswd" class="form_control" placeholder="Contraseña">
+                            <input type="password" name="userPasswd" id="userPasswd" pattern="^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})" class="form_control" placeholder="Contraseña" required minlength="8" maxlength="16">
 
                             <label for="email" class="form_label" >Correo</label>
                             <input type="email" name="email" id="email" class="form_control" placeholder="Escribe Correo electrónico">
@@ -238,14 +238,14 @@
                             <fieldset id="Condiciones">
                                 <legend>Condiciones</legend>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit cum minima illum omnis vender tu vida al diabl8 magnam harum at et Modi cupiditate asperiores soluta corrupti numquam minus atque, ratione sint assumenda UwU</p>
-                                <input type="checkbox" name="is=Ok" id="isOk">
+                                <input type="checkbox" name="is=Ok" id="isOk" required>
                                 <label for="isOk">No lo he leido pero estoy de acuerdo con las Condiciones</label>
                             </fieldset>
 
                             <fieldset id="Datos del curso">
                                 <legend>Datos del curso</legend>
                                 <label for="curso" class="form_label">Curso</label>
-                                <select name="curso" id="curso" class="form_control">
+                                <select name="curso" id="curso" class="form_control" required>
                                     <option value="">Elige un curso</option>
                                     <optgroup label="Font-end">
                                     <option value="HTML-01">HTML5</option>
@@ -280,9 +280,9 @@
                             <dt class="dt">Input file</dt>
                             <dd class="dd"><input type="file"></dd>
                             <dt class="dt">Input numbre</dt>
-                            <dd class="dd"><input type="number"></dd>
+                            <dd class="dd"><input type="number" min="0" max="10" step="2"></dd>
                             <dt class="dt">Input range</dt>
-                            <dd class="dd"><input type="range"></dd>
+                            <dd class="dd"><input type="range" min="-1" max="1"></dd>
                             <dt class="dt">Input search </dt>
                             <dd class="dd"><input type="search"></dd>
                             <dt class="dt">Input tel </dt>
