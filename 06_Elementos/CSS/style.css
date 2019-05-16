@@ -244,3 +244,30 @@ video, embed {
     background-color: coral;
     text-align: center
 }
+
+/* Formulario */
+
+.form_control {
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 2px solid #6A2E35;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+fieldset {
+    margin-bottom: 1rem;
+    border-color: #EC7357;
+    font-family: 'Righteous', cursive;
+    
+}
+.form_label {
+    display: block;
+    margin-bottom: 0.2rem;
+    
+}
+
+input::placeholder {
+    color: #6A2E35
+}

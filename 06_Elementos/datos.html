@@ -178,21 +178,75 @@
                         <li>radio butons</li>
                         <li>select / options</li>
                         <li>botones</li>
-
+                    </ul>
                         <p>La etiqueta form tiene dos atributos importantes</p>
                         <ul>
                             <li>action</li>
                             <li>method</li>
                         </ul>
-
-                        <form action="https://jsonplaceholder.typicode.com/users" method="POST">
+                        <h3>Formulario mínimo</h3>
+                        <p>Ejemplo de los Elementos minimos de un Formuario y usos de los distintos medios: GET y POST</p>
+                        <h4>Uso de GET</h4>
+                    
+                        <form action="" name="basic-get" method="GET">
                             <input type="text" name="userName" placeholder="Escribe tu nombre">
                             <input type="password" name="userPasswd" placeholder="Contraseña">
                             <button type="submit">Enviar</button>
                         </form>
+                        <h4>Uso de POST</h4>
+                    
+                        <form action="https://jsonplaceholder.typicode.com/users" name="basic-post" method="POST">
+                            <input type="text" name="userName" placeholder="Escribe tu nombre">
+                            <input type="password" name="userPasswd" placeholder="Contraseña">
+                            <button type="submit">Enviar</button>
+                        </form>
+                        <h3>Formulario más completo</h3>
+                        <p>Usamos en un mi mismo formulario los principales controles </p>
+
+                    
+                        <form action="https://jsonplaceholder.typicode.com/users" name="complete-post" method="POST">
+                            <fieldset>
+                                <legend>Datos personales</legend>
+                            <label for="userName" class="form_label">Nombre</label>
+
+                            <input type="text" name="userName" id="userName" class="form_control" placeholder="Escribe tu nombre">
 
 
-                    </ul>
+                            <label for="userPasswd" class="form_label">Contraseña</label>
+
+                            <input type="password" name="userPasswd" id="userPasswd" class="form_control" placeholder="Contraseña">
+
+                            <label for="email" class="form_label" >Correo</label>
+                            <input type="email" name="email" id="email" class="form_control" placeholder="Escribe Correo electrónico">
+
+                            <label for="text" class="form_label" >Más información</label>
+
+                            <textarea name="info" id="info" class="form_control"  rows="5" placeholder="Más información"></textarea>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Condiciones</legend>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit cum minima illum omnis vender tu vida al diabl8 magnam harum at et Modi cupiditate asperiores soluta corrupti numquam minus atque, ratione sint assumenda UwU</p>
+                                <input type="checkbox" name="is=Ok" id="isOk">
+                                <label for="isOk">No lo he leido pero estoy de acuerdo con las Condiciones</label>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Datos del curso</legend>
+                                <label for="curso" class="form_label">Curso</label>
+                                <select name="curso" id="curso" class="form_control">
+                                    <option value="">Elige un curso</option>
+                                    <option value="HTML-01">HTML5</option>
+                                    <option value="CSS-02">CSS3</option>
+                                    <option value="JS-03">JavaScript</option>
+                                </select>
+                            </fieldset>
+
+                            <button type="submit">Enviar</button>
+                        </form>
+
+
+                    
                 </header>
             </section>
         </main>
