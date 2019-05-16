@@ -205,7 +205,7 @@
 
                     
                         <form action="https://jsonplaceholder.typicode.com/users" name="complete-post" method="POST">
-                            <fieldset>
+                            <fieldset id="Datos personales">
                                 <legend>Datos personales</legend>
                             <label for="userName" class="form_label">Nombre</label>
 
@@ -219,31 +219,81 @@
                             <label for="email" class="form_label" >Correo</label>
                             <input type="email" name="email" id="email" class="form_control" placeholder="Escribe Correo electrónico">
 
-                            <label for="text" class="form_label" >Más información</label>
+                            <datalist id="formacion">
+                                <option>Graduado</option>
+                                <option>Licenciado</option>
+                                <option>Doctor</option>
+                            </datalist>
+                            <label for="birthDate">Fecha de nacimiento</label>
+                            <input type="date" name="birthDate" id="birthDate" class="form_control">
+
+                            <label for="cv" class="form_label">formación</label>
+                            <input type="text" name="cv" id="cv" placeholder="Seleciona o indica tus estudios" list="formacion" class="form_control">
+
+                            <label for="text" class="form_label">Más información</label>
 
                             <textarea name="info" id="info" class="form_control"  rows="5" placeholder="Más información"></textarea>
                             </fieldset>
 
-                            <fieldset>
+                            <fieldset id="Condiciones">
                                 <legend>Condiciones</legend>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit cum minima illum omnis vender tu vida al diabl8 magnam harum at et Modi cupiditate asperiores soluta corrupti numquam minus atque, ratione sint assumenda UwU</p>
                                 <input type="checkbox" name="is=Ok" id="isOk">
                                 <label for="isOk">No lo he leido pero estoy de acuerdo con las Condiciones</label>
                             </fieldset>
 
-                            <fieldset>
+                            <fieldset id="Datos del curso">
                                 <legend>Datos del curso</legend>
                                 <label for="curso" class="form_label">Curso</label>
                                 <select name="curso" id="curso" class="form_control">
                                     <option value="">Elige un curso</option>
+                                    <optgroup label="Font-end">
                                     <option value="HTML-01">HTML5</option>
                                     <option value="CSS-02">CSS3</option>
                                     <option value="JS-03">JavaScript</option>
+                                </optgroup>
+                                <optgroup label="Back-end">
+                                    <option value="Node-04">Node JS</option>
+                                    <option value="PHP-05">PHP</option>
+
+
+                                </optgroup>
                                 </select>
+                                <p>Ubicaciones</p>
+                                <input type="radio" name="sitio" id="madrid" value="MAD">
+                                <label for="madrid">Madrid</label>
+                                <input type="radio" name="sitio" id="sevilla" value="SEV">
+                                <label for="sevilla">Sevilla</label>
+                                <input type="radio" name="sitio" id="barcelona" value="BAR">
+                                <label for="barcelona">Barcelona</label>
                             </fieldset>
 
                             <button type="submit">Enviar</button>
+                   
                         </form>
+                        <p>Existe otros controles de formularios</p>
+
+                        <dl >
+
+                            <dt class="dt">Input color</dt>
+                            <dd class="dd"><input type="color"></dd>
+                            <dt class="dt">Input file</dt>
+                            <dd class="dd"><input type="file"></dd>
+                            <dt class="dt">Input numbre</dt>
+                            <dd class="dd"><input type="number"></dd>
+                            <dt class="dt">Input range</dt>
+                            <dd class="dd"><input type="range"></dd>
+                            <dt class="dt">Input search </dt>
+                            <dd class="dd"><input type="search"></dd>
+                            <dt class="dt">Input tel </dt>
+                            <dd class="dd"><input type="tel"></dd>
+                            <dt class="dt">Input url</dt>
+                            <dd class="dd"><input type="url"></dd>
+
+                        </dl>
+                        <div class="clearfix"></div>
+
+
 
 
                     
