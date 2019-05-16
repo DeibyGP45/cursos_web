@@ -65,6 +65,12 @@ margin-bottom: 0;
 
 }
 
+ @media (min-width: 700px) {
+.content_wrapper {
+    margin: 1rem 20%;
+}
+}
+
 img {
     max-width: 100%;
     /* display: inline-block */
