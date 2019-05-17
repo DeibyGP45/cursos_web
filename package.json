@@ -1,0 +1,22 @@
+{
+  "name": "cursos_web",
+  "version": "1.0.0",
+  "description": "Primer repositorio y ejercicio GitHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeibyGP45/cursos_web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeibyGP45/cursos_web/issues"
+  },
+  "homepage": "https://github.com/DeibyGP45/cursos_web#readme",
+  "dependencies": {
+    "dialog-polyfill": "^0.5.0"
+  }
+}

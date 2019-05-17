@@ -1,7 +1,18 @@
+import dialogPolyfill from'../../node_modules/dialog-polyfill/index.js'
+
 function main() {
+
+    let modal = document.querySelector ('#dlg-sample');
+
+    dialogPolyfill.registerDialog(modal)
+    // Now dialog acts like a native <dialog>.
+    
+
+
     document.querySelector('#btnInfo').addEventListener('click', mostrar)
 
     document.querySelector('#btnClose').addEventListener('click', cerrar)
+
 
 
         function mostrar() {
@@ -27,9 +38,21 @@ function main2() {
 
             modal.open = !modal.open
 
+            if(!modal.open) {
+                dialog.showModal();
+            }
+
         }
 
     }
 
+function canvas () {
+
+    let c = document.querySelector('#cnv-sample').getContext('2d')
+    c.fillRect(0, 50, 100, 50);
+
+}
+
 
 document.addEventListener('DOMContentLoaded', main)
+document.addEventListener('DOMContentLoaded', canvas)

@@ -10,8 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhthYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="../node_modules/dialog-polyfill/dialog-polyfill.css">
     <link rel="stylesheet" href="./CSS/style.css">
-    <script src="./JS/app.js"></script>
+    <script src="./JS/app.js" type="module"></script>
 </head>
 
 <body id="Inicio">
@@ -400,6 +401,10 @@
 
             <h2>Publicidad</h2>
             <p>Aquí iría la publicidad</p>
+            <template id="publi_extra">
+                <p>Aqui podemos incluir cualquier etiqueta HTML</p>
+            </template>
+            <canvas id="cnv-sample" class="canvas"></canvas>
         </aside>
     </div>
     <iframe class="iframe_footer" src="./footer.html"></iframe>

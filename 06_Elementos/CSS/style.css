@@ -272,3 +272,11 @@ fieldset {
 input::placeholder {
     color: #6A2E35
 }
+
+.canvas {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #6A2E35;
+    background-image: linear-gradient(coral, rgb(223, 155, 140))
+
+}
