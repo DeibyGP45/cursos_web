@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhthYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/app.js"></script>
 </head>
 
 <body id="Inicio">
@@ -25,7 +26,7 @@
                 <li><a href="./index.html#text-level">Text level</a></li>
                 <li><a href="./mmedia.html">Multimedia</a></li>
                 <li><a href="#tablas">Tablas</a></li>
-                <li><a href="#form">Formularios</a></li>
+                <li><a href="#forms">Formularios</a></li>
             </ul>
         </nav>
     </header>
@@ -51,7 +52,7 @@
                         <th>61,55%</th>
                         <th>
 
-                            <table class="sub_table"> 
+                            <table class="sub_table">
                                 <tr>
                                     <td>C67</td>
                                     <td>32,59%</td>
@@ -72,7 +73,7 @@
                                     <td>C64</td>
                                     <td>1,91%</td>
                                 </tr>
-                            
+
                             </table>
                         </th>
                     </tr>
@@ -91,8 +92,8 @@
                                     <td>10,79%</td>
                                 </tr>
                             </table>
-                            
-                            </th>
+
+                        </th>
                     </tr>
                     <tr>
                         <th scope="row">Mozilla Firefox</th>
@@ -133,7 +134,7 @@
                         <th colspan="3">Destinos</th>
                     </tr>
                     <tr>
-                        
+
                         <th>Caribe</th>
                         <th>Europa</th>
                         <th>Oriente</th>
@@ -150,19 +151,19 @@
                         <td>32%</td>
                         <td>37%</td>
                         <td>31%</td>
-                        
+
                     </tr>
                     <tr>
                         <th>Mayores de 30</th>
                         <td>30%</td>
                         <td>38%</td>
                         <td>32%</td>
-                        
+
                     </tr>
 
 
                 </table>
-               
+
 
             </section>
             <section id="form">
@@ -171,7 +172,7 @@
                     <p>Los Formularios se incluyen dentro de la etiqueta form</p>
                     <p>En ellos se utilizan los siguientes controles</p>
                     <ul>
-                        
+
                         <li>input - text</li>
                         <li>text area</li>
                         <li>checkbox</li>
@@ -179,45 +180,49 @@
                         <li>select / options</li>
                         <li>botones</li>
                     </ul>
-                        <p>La etiqueta form tiene dos atributos importantes</p>
-                        <ul>
-                            <li>action</li>
-                            <li>method</li>
-                        </ul>
-                        <h3>Formulario mínimo</h3>
-                        <p>Ejemplo de los Elementos minimos de un Formuario y usos de los distintos medios: GET y POST</p>
-                        <h4>Uso de GET</h4>
-                    
-                        <form action="" name="basic-get" method="GET">
-                            <input type="text" name="userName" placeholder="Escribe tu nombre">
-                            <input type="password" name="userPasswd" placeholder="Contraseña">
-                            <button type="submit">Enviar</button>
-                        </form>
-                        <h4>Uso de POST</h4>
-                    
-                        <form action="https://jsonplaceholder.typicode.com/users" name="basic-post" method="POST">
-                            <input type="text" name="userName" placeholder="Escribe tu nombre">
-                            <input type="password" name="userPasswd" placeholder="Contraseña">
-                            <button type="submit">Enviar</button>
-                        </form>
-                        <h3>Formulario más completo</h3>
-                        <p>Usamos en un mi mismo formulario los principales controles </p>
+                    <p>La etiqueta form tiene dos atributos importantes</p>
+                    <ul>
+                        <li>action</li>
+                        <li>method</li>
+                    </ul>
+                    <h3>Formulario mínimo</h3>
+                    <p>Ejemplo de los Elementos minimos de un Formuario y usos de los distintos medios: GET y POST</p>
+                    <h4>Uso de GET</h4>
 
-                    
-                        <form action="https://jsonplaceholder.typicode.com/users" name="complete-post" method="POST">
-                            <fieldset id="Datos personales">
-                                <legend>Datos personales</legend>
+                    <form action="" name="basic-get" method="GET">
+                        <input type="text" name="userName" placeholder="Escribe tu nombre">
+                        <input type="password" name="userPasswd" placeholder="Contraseña">
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <h4>Uso de POST</h4>
+
+                    <form action="https://jsonplaceholder.typicode.com/users" name="basic-post" method="POST">
+                        <input type="text" name="userName" placeholder="Escribe tu nombre">
+                        <input type="password" name="userPasswd" placeholder="Contraseña">
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <h3>Formulario más completo</h3>
+                    <p>Usamos en un mi mismo formulario los principales controles </p>
+
+
+                    <form action="https://jsonplaceholder.typicode.com/users" name="complete-post" method="POST">
+                        <fieldset id="Datos personales">
+                            <legend>Datos personales</legend>
                             <label for="userName" class="form_label">Nombre</label>
 
-                            <input type="text" name="userName" id="userName" class="form_control" placeholder="Escribe tu nombre" required>
+                            <input type="text" name="userName" id="userName" class="form_control"
+                                placeholder="Escribe tu nombre" required>
 
 
                             <label for="userPasswd" class="form_label">Contraseña</label>
 
-                            <input type="password" name="userPasswd" id="userPasswd" pattern="^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})" class="form_control" placeholder="Contraseña" required minlength="8" maxlength="16">
+                            <input type="password" name="userPasswd" id="userPasswd"
+                                pattern="^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})"
+                                class="form_control" placeholder="Contraseña" required minlength="8" maxlength="16">
 
-                            <label for="email" class="form_label" >Correo</label>
-                            <input type="email" name="email" id="email" class="form_control" placeholder="Escribe Correo electrónico">
+                            <label for="email" class="form_label">Correo</label>
+                            <input type="email" name="email" id="email" class="form_control"
+                                placeholder="Escribe Correo electrónico">
 
                             <datalist id="formacion">
                                 <option>Graduado</option>
@@ -228,26 +233,30 @@
                             <input type="date" name="birthDate" id="birthDate" class="form_control">
 
                             <label for="cv" class="form_label">formación</label>
-                            <input type="text" name="cv" id="cv" placeholder="Seleciona o indica tus estudios" list="formacion" class="form_control">
+                            <input type="text" name="cv" id="cv" placeholder="Seleciona o indica tus estudios"
+                                list="formacion" class="form_control">
 
                             <label for="text" class="form_label">Más información</label>
 
-                            <textarea name="info" id="info" class="form_control"  rows="5" placeholder="Más información"></textarea>
-                            </fieldset>
+                            <textarea name="info" id="info" class="form_control" rows="5"
+                                placeholder="Más información"></textarea>
+                        </fieldset>
 
-                            <fieldset id="Condiciones">
-                                <legend>Condiciones</legend>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit cum minima illum omnis vender tu vida al diabl8 magnam harum at et Modi cupiditate asperiores soluta corrupti numquam minus atque, ratione sint assumenda UwU</p>
-                                <input type="checkbox" name="is=Ok" id="isOk" required>
-                                <label for="isOk">No lo he leido pero estoy de acuerdo con las Condiciones</label>
-                            </fieldset>
+                        <fieldset id="Condiciones">
+                            <legend>Condiciones</legend>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit cum minima illum
+                                omnis vender tu vida al diabl8 magnam harum at et Modi cupiditate asperiores soluta
+                                corrupti numquam minus atque, ratione sint assumenda UwU</p>
+                            <input type="checkbox" name="is=Ok" id="isOk" required>
+                            <label for="isOk">No lo he leido pero estoy de acuerdo con las Condiciones</label>
+                        </fieldset>
 
-                            <fieldset id="Datos del curso">
-                                <legend>Datos del curso</legend>
-                                <label for="curso" class="form_label">Curso</label>
-                                <select name="curso" id="curso" class="form_control" required>
-                                    <option value="">Elige un curso</option>
-                                    <optgroup label="Font-end">
+                        <fieldset id="Datos del curso">
+                            <legend>Datos del curso</legend>
+                            <label for="curso" class="form_label">Curso</label>
+                            <select name="curso" id="curso" class="form_control" required>
+                                <option value="">Elige un curso</option>
+                                <optgroup label="Font-end">
                                     <option value="HTML-01">HTML5</option>
                                     <option value="CSS-02">CSS3</option>
                                     <option value="JS-03">JavaScript</option>
@@ -258,52 +267,135 @@
 
 
                                 </optgroup>
-                                </select>
-                                <p>Ubicaciones</p>
-                                <input type="radio" name="sitio" id="madrid" value="MAD">
-                                <label for="madrid">Madrid</label>
-                                <input type="radio" name="sitio" id="sevilla" value="SEV">
-                                <label for="sevilla">Sevilla</label>
-                                <input type="radio" name="sitio" id="barcelona" value="BAR">
-                                <label for="barcelona">Barcelona</label>
-                            </fieldset>
+                            </select>
+                            <p>Ubicaciones</p>
+                            <input type="radio" name="sitio" id="madrid" value="MAD">
+                            <label for="madrid">Madrid</label>
+                            <input type="radio" name="sitio" id="sevilla" value="SEV">
+                            <label for="sevilla">Sevilla</label>
+                            <input type="radio" name="sitio" id="barcelona" value="BAR">
+                            <label for="barcelona">Barcelona</label>
+                        </fieldset>
 
-                            <button type="submit">Enviar</button>
-                   
-                        </form>
-                        <p>Existe otros controles de formularios</p>
+                        <button type="submit">Enviar</button>
 
-                        <dl >
+                    </form>
+                    <p>Existe otros controles de formularios</p>
 
-                            <dt class="dt">Input color</dt>
-                            <dd class="dd"><input type="color"></dd>
-                            <dt class="dt">Input file</dt>
-                            <dd class="dd"><input type="file"></dd>
-                            <dt class="dt">Input numbre</dt>
-                            <dd class="dd"><input type="number" min="0" max="10" step="2"></dd>
-                            <dt class="dt">Input range</dt>
-                            <dd class="dd"><input type="range" min="-1" max="1"></dd>
-                            <dt class="dt">Input search </dt>
-                            <dd class="dd"><input type="search"></dd>
-                            <dt class="dt">Input tel </dt>
-                            <dd class="dd"><input type="tel"></dd>
-                            <dt class="dt">Input url</dt>
-                            <dd class="dd"><input type="url"></dd>
+                    <dl>
 
-                        </dl>
-                        <div class="clearfix"></div>
+                        <dt class="dt">Input color</dt>
+                        <dd class="dd"><input type="color"></dd>
+                        <dt class="dt">Input file</dt>
+                        <dd class="dd"><input type="file"></dd>
+                        <dt class="dt">Input numbre</dt>
+                        <dd class="dd"><input type="number" min="0" max="10" step="2"></dd>
+                        <dt class="dt">Input range</dt>
+                        <dd class="dd"><input type="range" min="-1" max="1"></dd>
+                        <dt class="dt">Input search </dt>
+                        <dd class="dd"><input type="search"></dd>
+                        <dt class="dt">Input tel </dt>
+                        <dd class="dd"><input type="tel"></dd>
+                        <dt class="dt">Input url</dt>
+                        <dd class="dd"><input type="url"></dd>
 
-
+                    </dl>
+                    <div class="clearfix"></div>
 
 
-                    
+
+
+
+                </header>
+            </section>
+            <section id="Elementos interactivos">
+                <header>
+                    <h2>Elementos interactivos</h2>
+                    <p>Son Elementos novedosos incluidos en las modificaciones de HTML5</p>
+                    <ul>
+                        <li>details - HTML 5.1</li>
+                        <li>dialog - HTML5.2</li>
+                    </ul>
+                    <h3>Etiqueta details</h3>
+                    <p>Permite crear un bloque con información extra que se muestra opcionalmente</p>
+                    <blockquote cite="https://www.imaginanet.com/html5-novedades.html">
+                        <details>
+                            <summary>Definir multiples imágenes para el diseño responsive</summary>
+                            <p>Esta versión nos ofrece la posibilidad de utilizar el tag picture, junto con el atributo
+                                srcset para poder definir múltiples imágenes para el diseño responsivo. Podríamos
+                                definir este tag como un contenedor de imágenes donde los diseñadores podrán declarar
+                                varias, que se utilizarán dependiendo del tamaño de pantalla, píxeles u otros
+                                parámetros. Por sí solo este tag no muestra nada, y para que funcione deberíamos
+                                establecer una imagen por defecto utilizando la etiqueta img habitual. Las imágenes
+                                alternativas se ubicarían
+                                dentro de los atributos srcset de los elementos img y source. Este código nos mostrará
+                                la imagen por defecto mientras que el tamaño de la pantalla sea superior a los 960 px.
+                                Cuando sea menor, se mostrará large.jpg, y si es inferior a 360 px se verá "mobile.jpg".
+                            </p>
+
+                        </details>
+                        <details>
+                            <summary>Mostrar o esconder información extra</summary>
+                            <p>En este caso utilizaremos las nuevas etiquetas details y summary. Mediante su uso podemos
+                                añadir información extra a cualquier contenido. Su principal característica es que la
+                                información no se muestra por defecto, pero si el usuario está interesado tendrá la
+                                opción de consultarla. Para utilizarla debes colocar el tag summary dentro de details.
+                                En el interior de summary será donde pondremos la información visible, que tendrá un
+                                icono a su izquierda para mostrar la información oculta.</p>
+                        </details>
+                        <details>
+                            <summary>Añadir funciones al menú contextual del navegador</summary>
+                            <p>Esta versión de HTML 5 permite añadir nuevas funciones al menú contextual del navegador.
+                                Para ello hay que utilizar el tag menuitem y su atributo type=context.</p>
+
+
+                            <p>Para su uso hay que asignar esa etiqueta como elemento hijo del tag menu, al que habrá
+                                que definir el atributo id, que tendrá así el mismo valor que el atributo contextmenu
+                                del elemento que queremos añadir al menú contextual. El tag menuitem puede ser de tres
+                                tipos diferentes: checkbox, command y radio. Si se ejecuta el código anterior, aparecerá
+                                un botón. Si sobre él se pulsa con el botón derecho, aparece la nueva opción en el menú.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Anidar headers y footers</summary>
+                            <p>HTML 5.1 ofrece la posibilidad de anidar varios headers y footers, siempre y cuando cada
+                                nivel esté dentro del contenido de la sección. Útil para crear cabeceras elaboradas.</p>
+                        </details>
+                        <details>
+                            <summary>Utilizar imágenes con un ancho de 0 píxeles</summary>
+
+                            <p>Otra de las novedades que incluye esta nueva versión es la posibilidad de utilizar
+                                imágenes que tengan un valor de 0 píxeles de ancho. Esto es muy útil a la hora de
+                                incluir fotografías que no queremos que sean vistas por los usuarios, como pueden ser
+                                archivos de trackeo. Lo que sí se recomienda es que se utilice el atributo alt vacío.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Crear opciones vacías</summary>
+
+                            <p>Otra de las cosas que no se podía utilizar hasta la fecha era crear un elemento option
+                                vacío. Este elemento suele ser utilizado conjuntamente con otras etiquetas como select,
+                                optgroup o datalist. Puede ser útil en aquellos casos en los que no queremos sugerir qué
+                                opción deben seleccionar los usuarios.</p>
+                        </details>
+
+                    </blockquote>
+
+                    <h3>Etiqueta dialog</h3>
+                    <p>La etiqueta dialog , novedad del HTML 5.2, corresponde a lo se conoce como una ventana modal o simplemente modal</p>
+                    <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/dialog">El atributo open indica que el diálogo está activo y disponible para interactuar. Cuando el atributo open no está asignado, no debe mostrarse al usuario</blockquote>
+
+                    <dialog id="dlg-sample">
+                        <p>Información que se mostrara cuando aparezca el modal</p>
+                        <button type="button" id="btnClose">Cerrar</button>
+                    </dialog>
+                    <button type="button" id="btnInfo">Mostrar información</button>
+
+
+
                 </header>
             </section>
         </main>
-
-
-
-
         <aside>
 
             <h2>Publicidad</h2>
