@@ -1,10 +1,10 @@
-import dialogPolyfill from'../../node_modules/dialog-polyfill/index.js'
-
+/* import dialogPolyfill from'../../node_modules/dialog-polyfill/index.js'
+ */
 function main() {
 
-    let modal = document.querySelector ('#dlg-sample');
+   /*  let modal = document.querySelector ('#dlg-sample'); */
 
-    dialogPolyfill.registerDialog(modal)
+    // dialogPolyfill.registerDialog(modal)
     // Now dialog acts like a native <dialog>.
     
 
@@ -24,7 +24,7 @@ function main() {
 }
 
 function main2() {
-    let modal = document.querySelector ('dlg-sample')
+    /* let modal = document.querySelector ('dlg-sample') */
 
     document.querySelector ('#btnInfo').addEventListener(
         'click', onClick)
@@ -32,7 +32,7 @@ function main2() {
         document.querySelector ('#btnCerrar').addEventListener(
             'click', onClick)
 
-        function onClick() {
+      /*   function onClick() {
 
             if(!modal.open) {modal.open = false}
 
@@ -41,7 +41,7 @@ function main2() {
             if(!modal.open) {
                 dialog.showModal();
             }
-
+ */
         }
 
     }
@@ -49,7 +49,7 @@ function main2() {
 function canvas () {
 
     let c = document.querySelector('#cnv-sample').getContext('2d')
-    c.fillRect(0, 50, 100, 50);
+    c.fillRect(0, 60, 100, 50);
 
 }
 
