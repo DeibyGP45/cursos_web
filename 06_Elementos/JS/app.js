@@ -44,7 +44,6 @@ function main2() {
  */
         }
 
-    }
 
 function canvas () {
 
