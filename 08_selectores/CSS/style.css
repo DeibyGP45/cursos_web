@@ -1,0 +1,84 @@
+/***************** Ejercicio 8 ****************/
+
+
+/***************** Estios del header ****************/
+
+header {
+    background-color: brown;
+    color: bisque;
+    padding-bottom: 2rem;
+    padding-top: 2rem; 
+    padding-left: 5rem;
+}
+
+    header h1 {}
+    header p {
+
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.5rem
+
+    }
+
+    /* Selector de descendientes (descendent) - simbolo el espacio*/
+
+    .combinadores p {
+        background-color: goldenrod
+    }
+/* Selectores cambinados */
+
+    /* Selector de hijo (child) - simbolo es el >*/
+
+    .combinadores>p {
+
+    background-color: aquamarine}
+
+    /* Selector de hermanos (sibilings) - el simbolo es la ~*/
+
+.combinadores div~p {
+    background-color: palevioletred
+}
+
+    /* Selector de hermanos adyacentes (adyacent sibilings) - el simbolo es la + */
+
+    .combinadores div+p {
+        background-color: green
+    }
+
+    /* Selectores de atributos - simbolo [] */
+
+    [Title] {color: red}
+
+    /* Atributo igual a ... */
+
+    [Title="Extra"] {color: blue}
+
+    /* Atributo empieza por ... */
+
+    [Title^="Parrafo"] {color: green}
+
+    /* Atributo contiene ... */
+
+    [Title*="Par"] {color: purple}
+
+    /* Atributo termina por ... */
+
+    [Title$="2"] {color: hotpink}
+
+
+
+    /***************** Estilos del footer ****************/
+
+    footer {
+
+        background-color: brown;
+        color: bisque;
+        padding-bottom: 1rem;
+    padding-top: 1rem; 
+    }
+    footer address {}
+
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
