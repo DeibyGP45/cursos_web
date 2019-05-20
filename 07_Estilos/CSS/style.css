@@ -1,0 +1,38 @@
+
+/*
+Ejemplo de import asociado a una Query
+@import url(./header.css) screen and (max-device-width: 500px); */
+@import url(./footer.css);
+
+/* Ejemplo import sin condiciones
+@import url(./header.css);
+@import url(./footer.css);  */
+
+/* Otras directivas son 
+
+@font-face
+@keyframes
+
+@page
+@suports
+@namespace
+ */
+
+/* Selector de etiqueta */ 
+
+body {background-color: bisque;}
+
+/* Selector de clase */
+
+.sample {color: green}
+/* Selector de ID: NO SE UA POR BUENAS PRÁCTICAS*/
+
+
+/* Forma más habitual de usr media Queries */
+
+@media screen and (max-device-width: 500px) {
+    body {
+        background-color: goldenrod;
+    }
+}
+
