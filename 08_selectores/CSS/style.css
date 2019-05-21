@@ -1,24 +1,36 @@
 /***************** Ejercicio 8 ****************/
 
+/* * {border: inherit} */
 
 /***************** Estios del header ****************/
 
-header {
+body>header {
     background-color: brown;
     color: bisque;
     padding-bottom: 2rem;
     padding-top: 2rem; 
     padding-left: 5rem;
+    font-family: 'Righteous', cursive;
+    text-align: center
 }
 
-    header h1 {}
-    header p {
+body>header h1 {
+
+        margin-top: 0;
+        margin-bottom: 0;
+        
+
+    }
+    body>header p {
 
         margin-top: 0;
         margin-bottom: 0;
         font-size: 1.5rem
 
     }
+    body {font-family: Verdana, Geneva, Tahoma, sans-serif}
+
+    h2 {font-family: 'Righteous', cursive;}
 
     /* Selector de descendientes (descendent) - simbolo el espacio*/
 
@@ -45,6 +57,8 @@ header {
         background-color: green
     }
 
+    /*************************************** Estilos de la seccion .atributos ****************************************/
+    
     /* Selectores de atributos - simbolo [] */
 
     [Title] {color: red}
@@ -61,11 +75,105 @@ header {
 
     [Title*="Par"] {color: purple}
 
-    /* Atributo termina por ... */
+   .atributos /* Atributo termina por ... */
 
     [Title$="2"] {color: hotpink}
 
 
+/*************************************** Estilos de la seccion .pseudo-elementos y .numerados .comillas
+****************************************/
+
+.pseudo_elementos p::first-letter {
+
+    font-size: 3rem;
+    font-family: fantasy;
+    color: blue
+}
+
+.pseudo_elementos p::first-line {
+
+    font-style: italic;
+    font-weight: bold;
+}
+.pseudo_elementos .medio,
+ {
+    color: brown
+}
+
+.pseudo_elementos .medio-pro::before,
+.pseudo_elementos .medio-pro::after {
+
+    content: url(../../favicon.ico)url(../../favicon.ico)url(../../favicon.ico)url(../../favicon.ico)"FANTASIA"url(../../favicon.ico)url(../../favicon.ico)url(../../favicon.ico)url(../../favicon.ico);
+    display: block;
+    background-color: bisque;
+    /* width: 100%; */
+    padding: 1rem;
+    margin-top: 0.5rem;
+    text-align: center
+}
+
+.banda {
+content: "";
+    display: block;
+    background-color: bisque;
+    color: brown;
+    padding: 1rem;
+}
+
+body {counter-reset: parrafos;}
+
+.numerados p::before {
+ counter-increment: parrafos;
+ content: counter(parrafos, armenian) " - ";
+ font-weight: bold;
+ list-style-type: 
+
+}
+
+.comillas {quotes: "\00AB" "\00BB"}
+
+.comillas p::before{
+
+    content: open-quote;
+    
+}
+.comillas p::after{
+
+    content: close-quote;
+}
+
+/*************************************** Estilos de la seccion .pseudo-clases
+****************************************/
+
+.pseudo_clases header h2 {margin-bottom: 0.2rem}
+
+.pseudo_clases header {
+    background-color: bisque;
+    padding-bottom: 1rem
+}
+
+.pseudo_clases header:hover {background-color: burlywood}
+
+.pseudo_clases header p {display: none}
+
+.pseudo_clases header:hover p {display: initial}
+
+.pseudo_clases a:visited { color:red}
+
+
+    .pseudo_numericas>p:nth-child(2) {text-decoration: underline}
+    .pseudo_numericas p:nth-of-type(2) {font-style: italic}
+
+   /*  2n = even */
+    .pseudo_numericas li:nth-of-type(3n) {background-color: lightcoral}
+    .pseudo_numericas li:nth-of-type(3n+1) {background-color: burlywood}
+    .pseudo_numericas li:nth-of-type(3n+2) {background-color: chocolate}
+
+    .pseudo_numericas li {
+        width: 5rem;
+        font-family: monospace
+    }
+    /* .pseudo_numericas li:last-of-type {padding-right: 1.5rem} */
 
     /***************** Estilos del footer ****************/
 
@@ -75,6 +183,7 @@ header {
         color: bisque;
         padding-bottom: 1rem;
     padding-top: 1rem; 
+    margin-top: 1rem
     }
     footer address {}
 
@@ -82,3 +191,7 @@ header {
         margin-top: 0;
         margin-bottom: 0;
     }
+    *:not(h1) {
+        font-variant: small-caps
+    }
+    
