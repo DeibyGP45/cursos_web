@@ -1,0 +1,114 @@
+:root {
+
+    --color-letra:bisque;
+    --color-fondo:brown;
+    --font-main: verdana;
+    --size-title: 2rem;
+    --size-title-section: 1.5rem;
+    --size-subtitle: 1.5rem;
+    --size-base: calc(14rem/16);
+    --size-small: calc(12rem/16);
+    --font-title: 'Righteous', cursive;
+    --margin-vertical: 1.5rem;
+    --margin-horizontal: 2rem;
+    --margin-parrafo: 1rem
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    line-height: 1;
+    font-family: var(--font-main);
+    font-size: var(--size-base);
+}
+
+
+body>header {
+    background-color: var(--color-fondo) ;
+    color: var(--color-letra);
+    padding-bottom: 2rem;
+    padding-top: 2rem; 
+    /* padding-left: 5rem; */
+    font-family: var(--font-title) ;
+    text-align: center
+}
+
+body>header h1 {
+
+        margin-top: 0;
+        margin-bottom: 0;
+        color: var(--color-letra);
+        font-size: var(--size-title)
+        
+
+    }
+    body>header p {
+
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: var(--size-subtitle)
+
+
+    }
+
+    footer {
+
+        background-color: var(--color-fondo);
+        color: var(--color-letra);
+        padding-bottom: 1rem;
+    padding-top: 1rem; 
+    margin-top: 1rem;
+    text-align: center;
+    font-size: var(--size-small)
+    }
+    footer address {}
+
+    
+    /* *:not(h1) {
+        font-variant: small-caps
+    } */
+
+  .footer a {
+
+    color: inherit
+  }  
+
+
+  /* Estilos del main */
+
+  main {
+      margin: var(--margin-vertical) var(--margin-horizontal);
+      vertical-align: top
+  }
+
+  main h2 {
+
+    font-size: var(--size-title-section);
+    margin-bottom: calc(var(--margin-vertical)/2);
+    margin-top: calc(var(--margin-vertical)/2);;
+  }
+
+  main p {
+    margin-bottom: var(--margin-parrafo);
+    margin-top: var(--margin-parrafo);
+
+  }
+
+  /* secciones del main */
+
+  section {
+
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem
+  }
+    
