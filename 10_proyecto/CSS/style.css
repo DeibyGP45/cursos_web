@@ -2,6 +2,8 @@
 
     --color-letra:bisque;
     --color-fondo:brown;
+    --color-gris-fondo:lightgrey;
+    --color-gris-borde:3px solid gray ;
     --font-main: verdana;
     --size-title: 2rem;
     --size-title-section: 1.5rem;
@@ -112,14 +114,60 @@ Estilos del main
   }
 
  /**********************************
-Estilos de las secciones del main
+Estilos de las seccion .inline-block
 ***********************************/
 
-  section {
+section {
 
-    width: 49%;
+  margin-top: var(--margin-vertical)
+}
+
+section article {
+    background-color: var(--color-gris-fondo);
+    border: var(--color-gris-borde);
+    padding: 1rem;
+    width: 50%;
+
+}
+
+  section.inlineblock article {
+
+    box-sizing: content-box;
+    box-sizing: border-box;
+    
     display: inline-block;
     vertical-align: top;
-    padding: 1rem
+    
+    
+  }
+
+  section.inlineblock article:nth-of-type(2) {
+
+    margin-left: -5px
+  }
+
+  section.float article {
+float: left;
+  }
+  
+  section.float::after {
+    content: '';
+    display: block;
+    clear: both;
   }
     
+  section.table {
+
+    display: table
+  }
+  section.table article {
+
+  display: table-cell;
+  
+  }
+
+  section.flex {
+
+    display: flex;
+    /* align-items: center */
+  }
