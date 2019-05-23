@@ -30,6 +30,10 @@ body{
     font-size: var(--size-base);
 }
 
+/******************
+Estilos del Header
+********************/
+
 
 body>header {
     background-color: var(--color-fondo) ;
@@ -59,6 +63,10 @@ body>header h1 {
 
     }
 
+/******************
+Estilos del Footer
+********************/
+
     footer {
 
         background-color: var(--color-fondo);
@@ -82,8 +90,9 @@ body>header h1 {
   }  
 
 
-  /* Estilos del main */
-
+/******************
+Estilos del main
+********************/
   main {
       margin: var(--margin-vertical) var(--margin-horizontal);
       vertical-align: top
@@ -102,7 +111,9 @@ body>header h1 {
 
   }
 
-  /* secciones del main */
+ /**********************************
+Estilos de las secciones del main
+***********************************/
 
   section {
 
