@@ -7,6 +7,7 @@
     --font-main: verdana;
     --size-title: 2rem;
     --size-title-section: 1.5rem;
+    --size-title-article: 
     --size-subtitle: 1.5rem;
     --size-base: calc(14rem/16);
     --size-small: calc(12rem/16);
@@ -104,12 +105,20 @@ Estilos del main
 
     font-size: var(--size-title-section);
     margin-bottom: calc(var(--margin-vertical)/2);
-    margin-top: calc(var(--margin-vertical)/2);;
+    margin-top: calc(var(--margin-vertical)/2);
+    padding-left:1rem;
   }
 
   main p {
     margin-bottom: var(--margin-parrafo);
     margin-top: var(--margin-parrafo);
+
+  }
+
+  main h3 {
+
+    font-size: var(--size-title-article);
+
 
   }
 
@@ -119,7 +128,8 @@ Estilos de las seccion .inline-block
 
 section {
 
-  margin-top: var(--margin-vertical)
+  margin-top: var(--margin-vertical);
+  margin-bottom: var(--margin-vertical)
 }
 
 section article {
@@ -130,11 +140,21 @@ section article {
 
 }
 
+section>header {
+
+  color: var(--color-fondo);
+  background-color: var(--color-letra);
+  padding: 0.3rem 1rem;
+  margin-bottom: var(--margin-parrafo)
+
+}
+
   section.inlineblock article {
 
-    box-sizing: content-box;
-    box-sizing: border-box;
-    
+    width: 50%;
+    padding: 1rem;
+    background-color: var(--color-gris-fondo);
+    border: var(--color-gris-borde);
     display: inline-block;
     vertical-align: top;
     
@@ -156,18 +176,30 @@ float: left;
     clear: both;
   }
     
-  section.table {
-
+  section .table {
     display: table
   }
-  section.table article {
+  section .table article {
 
   display: table-cell;
   
   }
 
-  section.flex {
+  section .flex {
 
     display: flex;
+    flex-direction: column;
     /* align-items: center */
+  }
+
+  section .flex article {
+
+   width: 100%;
+  }
+
+  @media screen and (min-width: 600px) {
+
+    section .flex {
+      flex-direction: row;
+    }
   }
