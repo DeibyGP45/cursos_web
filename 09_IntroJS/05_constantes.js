@@ -11,6 +11,8 @@ console.log (a)
 
 const b = 6
 
+b = 23
+
 if (true) {
     const c = 7 
     console.log(b) //6
@@ -31,6 +33,8 @@ datos.push(43)
 
 persona.altura = 178
 persona.edad = 23
+
+
  
 console.log(datos)
 console.log(persona)
