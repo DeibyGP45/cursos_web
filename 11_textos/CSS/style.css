@@ -7,21 +7,28 @@
 
 }
 
-
+* {
+    box-sizing: border-box;
+    }
 
 body {font-family: 'Quicksand', sans-serif;
-    background-image: linear-gradient(antiquewhite, rgb(223, 155, 140)) }
+    background-image: linear-gradient(antiquewhite, rgb(223, 155, 140));
+    margin: 
+}
+    
 
 h1 {
     font-family: "rubikregular";
     text-align: center;
     padding: 1rem;
+    font-size: 3rem
         }
 
 .content_wrapper {font-size: 1.1em}
 
 p {
     border:2px solid #6A2E35;
+    border-radius: 10px;
     padding: 1em}
 
     section.centrada {
@@ -31,4 +38,74 @@ p {
         margin-right: auto;
     }
 
-    .margenes {display: flex}
+    .espacios {
+        margin: 2rem 1rem;
+        background-color: coral;
+        padding-bottom: 5%
+    
+    }
+
+    .espacios h2 {
+        padding: 1rem;
+        margin:0;
+    }
+
+
+    .espacios p {
+        padding: 1rem;
+        background-color: rgb(233, 167, 25);
+        margin-right: 2.5%;
+        margin-left: 2.5%
+    }
+    
+
+    .flex {
+        margin: 2rem 1rem;
+        background-color: coral;
+        padding-bottom: 5%
+    
+    }
+    .flex h2 {
+        padding: 1rem;
+        flex: 1 0 100%;
+        text-shadow: 5px #6A2E35
+    }
+
+    .flex p {
+        padding: 1rem;
+        background-color: rgb(233, 167, 25);
+        box-shadow:  5px 5px 5px 5px#6A2E35
+        
+
+    }
+
+    .flex p:last-of-type {
+        margin-right: 2.5%
+    }
+
+    @media screen and (min-width: 690px) {
+
+        .espacios p {
+            width: 30%;
+            float: left;
+        }
+
+        .espacios p:not(last-of-type) {
+            margin-right: 0%
+        }
+
+        .espacios::after {
+            content: '';
+            display: block;
+            clear: both;
+    
+        }
+        .flex p {
+            margin-left: 2.5%;
+            
+                }
+        .flex_wrapper {
+        display: flex;
+    }
+    
+}
