@@ -44,6 +44,11 @@ console.log (w, typeof w)
  *
  */
 
+ function isValidNumber(n) {
+     r = true
+     if (isNaN(n)) || typeof a == 'boolean' || Array.isArray(n) ) 
+    }
+    return r
 
 function sumar (a = 0 ,b= 0) {
 
