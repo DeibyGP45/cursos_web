@@ -2,9 +2,16 @@ main {
     margin 5%
 }
 
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
 
 img {
     max-width: 100%;
+    /* display:block */
+    vertical-align: text-bottom
 }
 
 .img_wrapper_left {
@@ -12,7 +19,6 @@ img {
     width: 50%;
     float: left;
     padding-right: 1rem;
-    padding:
 }
 
 .img_wrapper_right {
@@ -28,3 +34,96 @@ section.reptiles:after{
     display: block;
     clear: both;
 }
+
+
+
+header, footer {
+background-color: brown;
+color: bisque;
+line-height: 6rem;
+text-align: center;
+
+}
+
+header>h1, footer {
+    line-height: 6rem;
+}
+
+
+header p {
+
+  visibility: hidden;
+    padding-bottom: 1rem;
+    display: initial
+    }
+
+header:hover p {
+visibility: initial
+
+}
+
+h1 {
+    font-family: 'Righteous';
+    
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem
+}
+
+p {
+
+    background-color:
+}
+ul {
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+figure {
+    width: 20%;
+    float: left;
+    padding-right: 1rem;
+}  
+}
+
+figcaption{
+
+    font-style: oblique;
+    text-align: center
+}
+
+table, tr, th{
+
+    border: 3px solid whtie;
+    background-color: antiquewhite
+}
+
+tr:nth-last-of-type(even) {
+
+    background-color: aquamarine
+}
+
+tr:nth-last-of-type(odd) {
+
+    background-color: white
+
+td {
+}
+
+.table_wrapper_right {
+
+    width: 50%;
+    float: right;
+    padding-right: 1rem;
+    padding:
+}
+
+table {
+
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
