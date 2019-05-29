@@ -22,4 +22,9 @@ img {
     padding-right: 1rem;
     padding:
 }
-section_reptiles:after
+
+section.reptiles:after{
+    content: '';
+    display: block;
+    clear: both;
+}
