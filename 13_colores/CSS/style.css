@@ -1,0 +1,95 @@
+.gama {
+    display:flex;
+}
+.gama div {
+     height: 10rem;
+    width: 10rem;
+    color: #7fffd4
+}
+
+div:nth-of-type(1) {
+
+    background-color: #39a581
+}
+
+div:nth-of-type(2) {
+
+    background-color: #0f6448
+}
+
+div:nth-of-type(3) {
+
+    background-color: #82d6ba
+}
+
+div:nth-of-type(4) {
+
+    background-color: #0b4431
+}
+
+.transp {
+
+    margin: 1rem;
+    display: flex;
+    border: 1px solid;
+    padding: 1rem;
+    width: 90%;
+    height: 10vh;
+    background-color: salmon
+}
+.transp div {
+height: 10rem;
+width: 10rem;
+background-color: rgba(127, 255, 212, 1)
+
+
+}
+
+.transp div:nth-of-type(2) {
+
+background-color: rgba(15, 100, 72, 0.644)
+
+}
+
+.transp p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.65)
+}
+
+.trans::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.opaciti {
+
+    margin-top: 8rem;
+     opacity:0 ; 
+
+}
+.opaciti:hover {
+    opacity: 1;
+
+}
+
+.fondo {
+
+
+    /* background-color: rgba(57, 165, 129, 0.6); */
+    opacity: 0.2;
+    background-image: url(../assets/Husky_600.png)
+}
+
+.fondo h2 {
+    opacity: 10;
+}
+
+.gradient {
+background: linear-gradient(
+        to left,
+        salmon, #82d6ba);
+        color: white;
+        text-align: center
+}

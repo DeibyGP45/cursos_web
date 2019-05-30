@@ -1,0 +1,21 @@
+
+body {
+    margin: 0;
+}
+
+header{
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
+    background-image: url(../assets/Husky_1024.png);
+    background-color: rgb(34, 131, 118);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+h1 {
+    color: wheat
+}
