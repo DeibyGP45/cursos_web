@@ -66,11 +66,19 @@ img {
 
 div .table_info {font-family: 'Quicksand', sans-serif;}
 
-table, tr, th {
-    border:1px solid black
+table {
+    background-color: white;
+    padding:0.3rem
+}
+tr:nth-last-of-type(even) {
+    background-color: #197278;
+    color: white
 }
 
-table 
+tr:nth-last-of-type(odd) {
+    background-color: #D5FFD9;
+    color: black
+}
 
 iframe { 
     max-width: 100%;
