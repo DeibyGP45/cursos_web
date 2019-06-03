@@ -1,2 +1,20 @@
 body {margin: 0}
 header {background-color: teal}
+
+main {min-height:60vh;
+background-color: bisque }
+
+.columnas {column-count: 3;
+column-gap: 2rem;
+column-rule: 1px solid gray;
+column-fill: balance }
+
+.columnas p:nth-last-of-type(1) {
+    margin-top: 0
+}
+
+.colum_wrapper {
+
+    width: 95;
+    margin-left: auto
+}
