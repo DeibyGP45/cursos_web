@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {margin: 0;}
+
+header, footer {
+    background-color: antiquewhite;
+    color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+main {
+    width: 90%;
+    margin: 1rem auto;
+    min-width: 80vh;
+    
+}
+
+p {
+
+    background-color: salmon;
+    padding: 0.5rem 1rem
+}
+.relative {
+    position: relative;
+    top: 2rem;
+    left:2rem;
+    background-color: antiquewhite;
+
+}
+
+.absolute_wrapper {
+    position: relative
+}
+
+
+.absolute {
+    background-color: aquamarine;
+    position: absolute;
+    top:2.5rem;
+    left: 6rem;
+    margin-right: 6rem;
+
+}
