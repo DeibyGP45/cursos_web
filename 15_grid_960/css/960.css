@@ -18,8 +18,7 @@ main {
 /* `Container
 ----------------------------------------------------------------------------------------------------*/
 
-.container_12,
-.container_16 {
+.container_12 {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
@@ -58,7 +57,8 @@ main {
 .push_9, .pull_9,
 .push_10, .pull_10,
 .push_11, .pull_11,
-.push_12, .pull_12 {
+.push_12, .pull_12
+{
   position: relative;
 }
 
@@ -84,7 +84,6 @@ main {
   width: 140px;
 }
 
-
 .container_12 .grid_3 {
   width: 220px;
 }
@@ -96,7 +95,6 @@ main {
 .container_12 .grid_5 {
   width: 380px;
 }
-
 
 .container_12 .grid_6 {
   width: 460px;
@@ -126,8 +124,58 @@ main {
   width: 940px;
 }
 
+/* `Prefix Extra Space >> Global
+----------------------------------------------------------------------------------------------------*/
 
+.container_12 .prefix_3,
+.container_16 .prefix_4 {
+  padding-left: 240px;
+}
 
+.container_12 .prefix_6,
+.container_16 .prefix_8 {
+  padding-left: 480px;
+}
+
+.container_12 .prefix_9,
+.container_16 .prefix_12 {
+  padding-left: 720px;
+}
+
+/* `Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .prefix_1 {
+  padding-left: 80px;
+}
+
+.container_12 .prefix_2 {
+  padding-left: 160px;
+}
+
+.container_12 .prefix_4 {
+  padding-left: 320px;
+}
+
+.container_12 .prefix_5 {
+  padding-left: 400px;
+}
+
+.container_12 .prefix_7 {
+  padding-left: 560px;
+}
+
+.container_12 .prefix_8 {
+  padding-left: 640px;
+}
+
+.container_12 .prefix_10 {
+  padding-left: 800px;
+}
+
+.container_12 .prefix_11 {
+  padding-left: 880px;
+}
 
 /* `Suffix Extra Space >> Global
 ----------------------------------------------------------------------------------------------------*/
@@ -183,7 +231,6 @@ main {
 }
 
 
-
 /* `Push Space >> Global
 ----------------------------------------------------------------------------------------------------*/
 
@@ -236,8 +283,6 @@ main {
 .container_12 .push_11 {
   left: 880px;
 }
-
-
 
 /* `Pull Space >> Global
 ----------------------------------------------------------------------------------------------------*/
@@ -292,6 +337,10 @@ main {
   left: -880px;
 }
 
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
 /* http://sonspring.com/journal/clearing-floats */
 
 .clear {
@@ -325,15 +374,4 @@ main {
 .container_12:after,
 .container_16:after {
   clear: both;
-}
-
-/*
-  The following zoom:1 rule is specifically for IE6 + IE7.
-  Move to separate stylesheet if invalid CSS is a problem.
-*/
-
-.clearfix,
-.container_12,
-.container_16 {
-  zoom: 1;
 }
