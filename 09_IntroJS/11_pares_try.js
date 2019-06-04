@@ -40,12 +40,13 @@ function isEntero( n = 0) {
   function esPar(n) {
     let r = true 
     if (!isValidNumber(n)) {
-        // Excepción: n no es un número
-        //throw 1 // antes -2
-        throw new Error(`${n} no es un número`)
+        // Excepción: n no es un número // antes -2
+        //throw 1 
+        const Error = new Error(`${n} no es un número`)
+        error.numero = 1
+        throw error
     } else if (!isEntero(n)) {
-        // Excepción: n no es entero
-        // throw 0 // antes -1
+        // Excepción: n no es entero // antes -1
         throw new Error(`El número ${n} no es entero`)
     } else if (n%2)  {
         r = false
@@ -75,7 +76,7 @@ function isEntero( n = 0) {
        } catch (error) { // error: -2 -1
             // i = -error + 1 // -1 -> 2 // -2 -> 3
             // output = excepciones[error]
-            output = error
+            output = error.message
        }
        console.log(output)
    }
@@ -101,10 +102,9 @@ function isEntero( n = 0) {
  */
    
 
-/*     esPar('pepe')
-    mostrar('pepe') */
+    mostrar('pepe')
+    mostrar(2.4)
     
 
-module.exports = esPar;
-
-/* Copia */
+exports.esPar = esPar;
+exports.mostrar = mostrar
