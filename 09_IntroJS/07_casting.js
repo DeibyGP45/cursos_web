@@ -1,71 +1,61 @@
-'user strict'
+'use strict'
 
-// Operaciones ocn numbers
+// Operaciones con Numbers
 let x = 2
 let y = 3
+let z = x * y
 
-let z = x * y 
-
-// Operaciones con 
- y = '3'
-z = x * y  // Durante la operacion Number (y)
-x= '5'
+// Operaciones con Numbers y Strings
+y = '3'
+z = x * y // Durante la operación Number(y)
+x = '5'
 z = x * y
 
-
-console.log(z) // 6
-
-console.log(z, typeof z) // number
-console.log(x, typeof x) //string
+console.log(z, typeof z) // 6// number
+console.log(x, typeof x) // string
 console.log(y, typeof y) // string
 
-// Sobrecarga del simbolo '+'
-
-/* +3
+/* Sobrecarga del simbolo +
++3
+"Hola " + "Pepe"
 2+2
-"Hola " + "pepe" */
+*/
 
-let w = x + y // No da 8. da '53'
+let saludo = "Hola, " + "Pepe"
+
+let w = x + y // No da 8, da '53'
 console.log(w, typeof w)
 
 x = 23
 y = '20'
-
-w = x + y // Da '2320'
+w = x + y // da '2320'
 w = w * 1
-console.log (w, typeof w)
+console.log(w, typeof w)
 
 /**
  * not !
- * 
- * or ||
- * 
- * And &&
- *
+ * OR ||
+ * AND &&
  */
 
- function isValidNumber(n) {
-     r = true
-     if (isNaN(n)) || typeof a == 'boolean' || Array.isArray(n) ) 
-    }
-    return r
-
-function sumar (a = 0 ,b= 0) {
-
-    if (isNaN (a)  || isNaN (b) ||
-        typeof a == 'boolean' ||
-        typeof b == 'boolean' ||
-        typeof a == 'object' ||
-        Array.isArray(b)) {
-        return 'No se puede sumar'
-    }
-    // let r = Number(a) +  Number(b)
-    //let r = parseFloat(a) +  parseFloat(b)
-     let r = +a + +b
-    return 'la suma total es ' + r
+function sumar (a = 0, b = 0) {
+    return a + b
 }
 
-console.log(sumar())
+function sumar (a = 0, b = 0) {
+    if ( isNaN(a) || isNaN(b) 
+    || typeof a == 'boolean' || typeof b == 'boolean'
+    || typeof a == 'object' || Array.isArray(b)
+    ) {
+        return 'No se puede sumar'
+    }
+    // let r = Number(a) + Number(b)
+    // let r = parseFloat(a) + parseFloat(b)
+    let r = +a + +b
+    return 'La suma es ' + r
+}
+
+/* Copia */
 
 console.log(sumar(2,2))
 console.log(sumar(2,0))
@@ -77,3 +67,4 @@ console.log(sumar('porque','yolo'))
 console.log(sumar(2, true))
 console.log(sumar({}, {}))
 console.log(sumar([], []))
+

@@ -1,62 +1,58 @@
 'use strict'
 
-// Variable de ambito global
-
+// variable de ámbito (scope) Global
 var antes = 2
-
 let a = 2
-let b = 4 
+let b = 4
 
-function prueba () {
-    //variable de ámbito local  a la funcion
-
-    var int = 3 
+function prueba() {
+    // variable de ámbito local a la función
+    var int = 3
     let i = 6
     let b = 9
 
     if (true) {
-        
-        //variable de ambito local a la funcion
-        var z = 4 
-        //variable de ambito local al bloque if
+         // variable de ámbito local a la función
+        var z = 4
+        // variable de ámbito local al bloque if
         let w = 7
-
-        console.log ('Es verdad')
-        console.log( 'desde el if', a) //2
-        console.log( 'desde el if', b) //9
-        console.log( 'desde el if', w) //7
-
-
+        console.log('Es verdad')
+        console.log('Desde el if', a) // 2
+        console.log('Desde el if', b) // 9
+        console.log('Desde el if', w) // 7
     }
 
-    console.log(a) //2
-    console.log(b) //9
-
- // c = 3 esto daria un error debido al user strict
-
-console.log ( 'desde la progrmna', a) //2
-console.log ( 'desde la funcion', b) //4
- // console.log( 'desde la funcion', w) //Error
-console.log( 'desde la funcion', z) 
-
+    console.log('Desde la función', a) // 2
+    console.log('Desde la función', b) // 9
+    // console.log('Desde la función', w) // Error
+    console.log('Desde la función', z) // 4
 }
 
 prueba()
 
+// c = 3 daría un error debido al use strict
 
-function ejemplo ( ) {
+console.log('Desde el programa', a) // 2
+console.log('Desde el programa', b) // 4
+
+let v = 45
+
+function ejemplo () {
+    let v = 6
     if (true) {
-         let v = 3
-         
+        let v = 3
+        console.log(v)
     }
-
-    console.log(v)
+    console.log(v) 
 }
 
-function sample ( ) {
+console.log(v) 
 
-    /* console.log(v) */
+function sample () {
+    // console.log(v) 
 }
 
 ejemplo()
 sample()
+
+/* Copia */
