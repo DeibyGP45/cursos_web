@@ -3,6 +3,13 @@ body {
     font-family: Verdana;
     background-color: #D5FFD9;
     margin: 0;
+    background-image: url(../assets/malmo03.jpg);
+    background-color: #D5FFD9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
 }
 
 .main_header {
@@ -27,7 +34,9 @@ img {
 }
 
 .content_wrapper {
+    background-color: white;
     margin: 1rem 3rem;
+    padding: 1.5rem
 
 }
 
