@@ -1,0 +1,119 @@
+
+body {
+    margin: 0;
+}
+
+header{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
+}
+
+header::before {
+    display: block;
+    content: '' ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    opacity: 0.5;
+
+    background-image: url(../assets/Husky_1024.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+
+}
+
+
+h1 {
+    color:#197278;
+    z-index: 20;
+}
+
+.content_wrapper {
+    /* background-image: url(../assets/Husky_1024.png);
+    background-repeat: no-repeat;
+    background-size: unset;
+    background-attachment: fixed; */
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.main_footer {
+
+    font-family: calibri;
+    background-color: #197278;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+img {
+    position: absolute;
+    opacity: 0.3;
+    max-width: 250px;
+    width: 600px;
+}
+
+.imagen {
+    margin-top: 10px;
+    display: block;
+    position: absolute;
+    top:2rem;
+    left: 3rem;
+    width: 100%;
+    min-width: 80%;
+
+}
+
+
+.menu ul {
+     list-style-type: none;
+     padding: 1rem 5rem;
+}
+
+.menu nav {
+color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 1rem 1rem;
+    border: 3px solid wheat;
+    margin: 0rem 0.5rem;
+    background-color:#197278;
+}
+
+.menu a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.menu {
+    display: block;
+    position: absolute;
+    bottom:1rem;
+    
+    margin: 0
+}
+
+.submenu  {
+    position: absolute;
+    padding: 0;
+    left: 1rem;
+}
+
+.submenu li {
+    display: list-item;
+    padding: 0.5rem 3rem;
+    margin: 0.5rem 0rem;
+}

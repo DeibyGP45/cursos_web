@@ -6,8 +6,7 @@
 body {margin: 0;}
 
 header, footer {
-    background-color: antiquewhite;
-    color: ;
+    background-color: brown;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,9 +14,12 @@ header, footer {
 
 }
 
+header {min-width: 10vh;}
+
 main {
     width: 90%;
-    margin: 1rem auto;
+    margin: 1rem auto 1 rem auto;
+
     min-width: 80vh;
     
 }
@@ -48,3 +50,40 @@ p {
     margin-right: 6rem;
 
 }
+
+.fixed {
+    background-color: brown;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 1rem;
+    overflow: hidden;
+
+
+}
+
+footer:hover {
+    min-height: 10vh;
+padding-bottom: ;
+padding-top: ;}
+
+.overflow {
+    height: 40vh;
+overflow: scroll;}
+
+/* width */
+.overflow::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  .overflow::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .overflow::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
