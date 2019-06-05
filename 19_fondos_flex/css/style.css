@@ -4,14 +4,15 @@ body {
     margin: 0;
 }
 
+
+
 header{
     position: relative;
     min-height: 100vh;
     display: flex;
-    align-items: center; /* vertical */
-    justify-content: center; /* horizontal */
+    flex-wrap: wrap;
+    flex-direction: column
 }
-
 header::before {
     display: block;
     content: '' ;
@@ -31,6 +32,44 @@ header::before {
 
 
 }
+
+div {border: 1px solid black}
+
+
+div.sup{
+    flex:1 1 auto;
+    display: flex;
+    justify-content: space-around
+}
+
+div.menu_wrapper{
+    flex: 0 1 auto;
+    display: flex;
+    align-items: flex-start;
+
+
+}
+
+div.logo_wrapper{
+    flex: 0 1 auto;
+    display: flex
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+div.sup div{
+    flex:1 1 auto;
+}
+
+div.inf{
+    flex:10 1 auto;
+    display: flex;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
+}
+
 
 
 h1 {
@@ -67,7 +106,6 @@ img {
 .imagen {
     margin-top: 10px;
     display: block;
-    position: absolute;
     top:1rem;
     left: 10rem;
     width: 100%;

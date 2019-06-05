@@ -21,35 +21,49 @@
                 <li><a href="">Viajes</a></li>
                 <li><a href="">Noticias</a></li>
                 <li><a href="">Contacto</a></li>
-                <li><a href="">Sobre mí</a></li>
             </ul>
         </nav>
     </header>
     <div class="content_wrapper">
         <main>
 
-               <div class="contacto">
-                    <h2>En Contacto</h2>
-                    
-                    <p>Para contactar con nosotros y recibir nuestro newsletter puede rellenar nuestro formulario para estar al loro de nuestra noticias:</p>
+            <div class="contacto">
+                <h2>En Contacto</h2>
 
-                    <div class="form">
+                <p>Para contactar con nosotros y recibir nuestro newsletter puede rellenar nuestro formulario para estar
+                    al loro de nuestra noticias:</p>
 
+                <div class="form">
+                </div>
 
-                        
-                    </div>
+                <div class="formulario">
 
-                    <div class="formulario">
+                    <form action="" method="post">
 
+                        <fieldset class="Datos_personales">
 
+                            <legend>Datos</legend>
+                            <label for="userName">Nombre</label>
+                            <input type="text" name="userName" id="userName" class="form_control"
+                                placeholder="Escribe tu nombre" required>
+                                <label for="email" class="form_label">Correo</label>
+                            <input type="email" name="email" id="email" class="form_control"
+                                placeholder="Escribe Correo electrónico">
+                        </fieldset>
 
-                        
-                    </div>
+                        <fieldset id="Condiciones">
+                                <legend>Condiciones</legend>
+                                <p>Lorem ipsum dolor sit amet c8 magnam harum at et Modi cupiditate asperiores soluta
+                                    corrupti numquam minus atque, ratione sint assume</p>
+                                <input type="checkbox" name="is=Ok" id="isOk" required>
+                                <label for="isOk">No lo he leido pero estoy de acuerdo con las Condiciones</label>
+                            </fieldset>
+                            
 
+                    </form>
+                </div>
 
-               </div> 
-
-
+            </div>
         </main>
     </div>
     <footer class="main_footer">
