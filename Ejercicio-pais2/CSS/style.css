@@ -16,7 +16,7 @@ body {
     background-color: #197278;
     color: white;
     font-family: 'Righteous', cursive;
-    padding: 0.8rem 0rem 0.5rem 2rem;
+    padding: 0.8rem 1rem 0.5rem 1rem;
     text-align: center;
 }
 
@@ -35,7 +35,7 @@ img {
 
 .content_wrapper {
     background-color: white;
-    margin: 1rem 3rem;
+    margin: 1rem 1rem;
     padding: 1.5rem
 
 }
@@ -89,12 +89,31 @@ tr:nth-last-of-type(odd) {
     color: black
 }
 
-iframe { 
-    width: 100%;
+
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+
+.video-responsive iframe{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
 
 @media (min-width: 700px) {
     .content_wrapper {
+        margin: 1rem 15%;
+    }
+}
+@media (min-width: 1024px) {
+    .content_wrapper {
         margin: 1rem 20%;
     }
-    }
+}
