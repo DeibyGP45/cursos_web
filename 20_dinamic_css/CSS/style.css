@@ -1,3 +1,10 @@
+body {
+
+    background-color: cornflowerblue;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
 section {margin: 3rem;}
 
 
