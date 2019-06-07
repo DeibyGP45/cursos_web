@@ -50,12 +50,13 @@ div.transform {
 
 
 p.btn-escalar:hover+div {
+    
     transform: scale(2)
 }
 
 p.btn-rotar:hover+div {
-
-    transform: rotate(120deg)
+transform-origin: left;
+    transform: rotate(180deg)
 }
 
 p.btn-inclinar:hover+div {
@@ -67,3 +68,14 @@ p.btn-trasladar:hover+div {
 
     transform: translateX(10rem)
 }
+
+section.tresd {
+
+    perspective: 500px;
+}
+
+p.btn-3d:hover+div {
+    
+    transform: translateZ(-2rem)
+}
+
