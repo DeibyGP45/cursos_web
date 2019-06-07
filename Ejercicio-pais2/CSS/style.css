@@ -170,19 +170,10 @@ div.ad {
         }
     .laptop {
             display: flex;
-            padding: 1rem 20%; 
+            padding: 1rem 15%; 
             flex-direction: column;
             align-items: center}
 
-        div.ad {
-            background-color: rgba(128, 128, 128);
-            margin: -0.5rem 0rem;
-            padding: 1.5rem;
-            width: 300px;
-            height: 100px;
-            max-width: 100%;
-            border-radius: 5px;
-            }
 }
 @media (min-width: 1024px) {
     .content_wrapper {
@@ -193,16 +184,6 @@ div.ad {
             padding: 1rem 20%; 
             flex-direction: column;
             align-items: center}
-
-        div.ad {
-            background-color: rgba(128, 128, 128);
-            margin: -0.5rem 0rem;
-            padding: 1.5rem;
-            width: 300px;
-            height: 100px;
-            max-width: 100%;
-            border-radius: 5px;
-            }
 
 @media (min-width:1200px) {
 
@@ -222,12 +203,9 @@ div.ad {
         align-items: initial}
 
     div.ad {
-    background-color: rgba(128, 128, 128);
     margin: 1rem 1rem;
-    padding: 1.5rem;
     width: 160px;
     height: 600px;
-    border-radius: 5px;
     }
 }
 }
