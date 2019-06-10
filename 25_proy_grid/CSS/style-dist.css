@@ -1,0 +1,235 @@
+:root {
+
+    --color-letra:bisque;
+    --color-fondo:brown;
+    --color-gris-fondo:lightgrey;
+    --color-gris-borde:3px solid gray ;
+    --font-main: verdana;
+    --size-title: 2rem;
+    --size-title-section: 1.5rem;
+    --size-title-article: 1.5rem; 
+    --size-subtitle: 1.5rem;
+    --size-base: -webkit-calc(14rem/16);
+    --size-base: -moz-calc(14rem/16);
+    --size-base: calc(14rem/16);
+    --size-small: -webkit-calc(12rem/16);
+    --size-small: -moz-calc(12rem/16);
+    --size-small: calc(12rem/16);
+    --font-title: 'Righteous', cursive;
+    --margin-vertical: 1.5rem;
+    --margin-horizontal: 2rem;
+    --margin-parrafo: 1rem
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    line-height: 1;
+    font-family: var(--font-main);
+    font-size: var(--size-base);
+}
+
+/******************
+Estilos del Header
+********************/
+
+
+body>header {
+    background-color: var(--color-fondo) ;
+    color: var(--color-letra);
+    padding-bottom: 2rem;
+    padding-top: 2rem; 
+    /* padding-left: 5rem; */
+    font-family: var(--font-title) ;
+    text-align: center
+}
+
+body>header h1 {
+
+        margin-top: 0;
+        margin-bottom: 0;
+        color: var(--color-letra);
+        font-size: var(--size-title)
+        
+
+    }
+    body>header p {
+
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: var(--size-subtitle)
+
+
+    }
+
+/******************
+Estilos del Footer
+********************/
+
+    footer {
+
+        background-color: var(--color-fondo);
+        color: var(--color-letra);
+        padding-bottom: 1rem;
+    padding-top: 1rem; 
+    margin-top: 1rem;
+    text-align: center;
+    font-size: var(--size-small)
+    }
+    footer address {}
+
+    
+    /* *:not(h1) {
+        font-variant: small-caps
+    } */
+
+  .footer a {
+
+    color: inherit
+  }  
+
+
+/******************
+Estilos del main
+********************/
+  main {
+      margin: var(--margin-vertical) var(--margin-horizontal);
+      vertical-align: top
+  }
+
+  main h2 {
+
+    font-size: var(--size-title-section);
+    margin-bottom: -webkit-calc(var(--margin-vertical)/2);
+    margin-bottom: -moz-calc(var(--margin-vertical)/2);
+    margin-bottom: calc(var(--margin-vertical)/2);
+    margin-top: -webkit-calc(var(--margin-vertical)/2);
+    margin-top: -moz-calc(var(--margin-vertical)/2);
+    margin-top: calc(var(--margin-vertical)/2);
+    padding-left:1rem;
+  }
+
+  main p {
+    margin-bottom: var(--margin-parrafo);
+    margin-top: var(--margin-parrafo);
+
+  }
+
+  main h3 {
+
+    font-size: var(--size-title-article);
+
+
+  }
+
+ /**********************************
+Estilos de las seccion .inline-block
+***********************************/
+
+section {
+
+  margin-top: var(--margin-vertical);
+  margin-bottom: var(--margin-vertical)
+}
+
+section article {
+    background-color: var(--color-gris-fondo);
+    border: var(--color-gris-borde);
+    padding: 1rem;
+    width: 50%;
+
+}
+
+section>header {
+
+  color: var(--color-fondo);
+  background-color: var(--color-letra);
+  padding: 0.3rem 1rem;
+  margin-bottom: var(--margin-parrafo)
+
+}
+
+  section.inlineblock article {
+
+    width: 50%;
+    padding: 1rem;
+    background-color: var(--color-gris-fondo);
+    border: var(--color-gris-borde);
+    display: inline-block;
+    vertical-align: top;
+    
+    
+  }
+
+  section.inlineblock article:nth-of-type(2) {
+
+    margin-left: -5px
+  }
+
+  section.float article {
+float: left;
+  }
+  
+  section.float::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+    
+  section .table {
+    display: table
+  }
+  section .table article {
+
+  display: table-cell;
+  
+  }
+
+  section .flex {
+
+    display: -webkit-box;
+
+    display: -webkit-flex;
+
+    display: -moz-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* align-items: center */
+  }
+
+  section .flex article {
+
+   width: 100%;
+  }
+
+  @media screen and (min-width: 600px) {
+
+    section .flex {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -moz-box-orient: horizontal;
+      -moz-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+  }
