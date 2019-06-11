@@ -1,0 +1,41 @@
+:root {
+
+    --color-letra:bisque;
+    --color-fondo:brown;
+    --color-gris-fondo:lightgrey;
+    --color-gris-borde:3px solid gray ;
+    --font-main: verdana;
+    --size-title: 2rem;
+    --size-title-section: 1.5rem;
+    --size-title-article: 1.5rem; 
+    --size-subtitle: 1.5rem;
+    --size-base: calc(14rem/16);
+    --size-small: calc(12rem/16);
+    --font-title: 'Righteous', cursive;
+    --margin-vertical: 1.5rem;
+    --margin-horizontal: 2rem;
+    --margin-parrafo: 1rem
+}
+
+body {
+
+    font-family: var (--font-main)
+}
+
+.main-header {
+background-color: var(--color-fondo);
+color: var(--color-letra);
+
+}
+
+.main-footer {
+    background-color: var(--color-fondo);
+color: var(--color-letra);
+min-height: 10vh;
+
+
+}
+
+.main-footer address {
+    margin-bottom: 1rem
+}
