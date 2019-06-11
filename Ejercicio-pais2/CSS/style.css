@@ -175,6 +175,8 @@ div.ad {
     
     }
 
+    
+
 /* MEDIA QUERY */
 
 @media (min-width: 700px) {
@@ -196,7 +198,7 @@ div.ad {
             display: flex;
             padding: 1rem 20%; 
             flex-direction: column;
-            align-items: center}
+            align-items: center;}
 
 @media (min-width:1200px) {
 
@@ -206,6 +208,7 @@ div.ad {
         padding: 1.5rem;
         border-radius: 10px;
         display: flex;
+        align-items: center
     
     }
 
@@ -213,7 +216,16 @@ div.ad {
         display: flex;
         padding: 1rem 20%; 
         flex-direction: initial;
-        align-items: initial}
+        align-items: initial;
+        align-items: end;
+    }
+
+        .lateral {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            /* margin: 1rem 1rem; */
+             }
 
     div.ad {
     margin: 1rem 1rem;
