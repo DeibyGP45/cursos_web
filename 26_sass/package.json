@@ -1,0 +1,15 @@
+{
+  "name": "26_sass",
+  "version": "1.0.0",
+  "description": "Ejemplo del uso del SASS",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm -v",
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "saludo":"echo hola amigo",
+    "sass": "sass sass/:css/ --watch --no-course-map"
+  },
+  "keywords": [],
+  "author": "Deiby",
+  "license": "ISC"
+}
