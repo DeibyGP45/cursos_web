@@ -41,8 +41,7 @@ min-height: 10vh;
 
 .main_footer {
 
-    background-color: var(--color-fondo);
-    color: var(--color-letra);
+
     min-height: 10vh;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
@@ -55,3 +54,4 @@ min-height: 10vh;
 .main-footer address {
     margin-bottom: 1rem
 }
+
