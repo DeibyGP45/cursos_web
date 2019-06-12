@@ -96,7 +96,10 @@ img {
 
 /* TABLE */
 
-div .table_info {font-family: 'Quicksand', sans-serif;}
+div .table_info {
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+}
 
 table {
     background-color: white;
