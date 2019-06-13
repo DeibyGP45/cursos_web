@@ -177,6 +177,12 @@ div.ad {
     border-radius: 5px;
     }
 
+    .lateral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         }
+
 
     /* PREUBAS ARTICULOS  */
 
@@ -240,10 +246,7 @@ div.ad {
     }
 
         .lateral {
-            display: flex;
             flex-direction: column-reverse;
-            align-items: center;
-            /* margin: 1rem 1rem; */
              }
 
     div.ad {
