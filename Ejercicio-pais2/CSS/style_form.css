@@ -33,6 +33,17 @@ input::placeholder {
     font-style: italic;
 }
 
-form {
+.boton_enviar {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boton_enviar button {
+
+    width: 100px;
+    height: 100%;
+    font-size: 18px;
     
 }
