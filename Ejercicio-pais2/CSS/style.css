@@ -180,11 +180,62 @@ div.ad {
     border-radius: 5px;
     }
 
+    
     .lateral {
         display: flex;
         flex-direction: column;
         align-items: center;
          }
+
+/* carteles */
+    .cartel_malmo {
+        height: 20vh;
+        font-family: 'Righteous', cursive;
+    background-image: url(../assets/malmo03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 3rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+    .cartel_aranjuez {
+        height: 20vh;
+        font-family: 'Righteous', cursive;
+    background-image: url(../assets/Aranjuez01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 3rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    margin: 10px;
+    }
+    .cartel_roma {
+        height: 20vh;
+        font-family: 'Righteous', cursive;
+    background-image: url(../assets/Italia03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 3rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+
+
 
 
     /* PREUBAS ARTICULOS  */
@@ -249,6 +300,8 @@ div.ad {
         align-items: center
     
     }
+
+
 
     .laptop {
         display: flex;
