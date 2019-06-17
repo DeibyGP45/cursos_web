@@ -81,7 +81,7 @@ img {
   .main_header nav a:hover {
 
     background-color: white;
-    color: #197278;
+    color: #F44712;
     border-radius: 20px 10px;
     transition-property: background-color, color;
     transition-duration: 0.5s;
