@@ -1,0 +1,20 @@
+block variables
+include ../partials/variables.pug
+include ../partials/mixins.pug
+
+html(lang=language)
+    head
+        meta(charset=charset)
+         if (page == 1)
+            title #{titulo}
+    else
+        title #{tituloPagina} - #{titulo}
+        link(rel="stylesheet", href="./CSS/style.css")
+        title #{titulo}
+        
+include ../partials/meta.pug
+body
+    // Comentario
+    include ../partials/header.pug
+        block main 
+    include ../partials/footer.pug 

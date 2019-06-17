@@ -1,0 +1,19 @@
+-
+    const aMenu = [ {nombre: 'Inicio' , id: 'index', description: 'Bla bla bla'},
+    {nombre: 'Clientes', id: 'clientes', description: 'Bla bla bla'},
+    {nombre: 'Porfolio', id: 'porfolio', description: 'Bla bla bla'},
+    {nombre: 'Partners', id: 'partners', description: 'Bla bla bla'}, 
+    {nombre: 'Aceca de', id: 'acerca', description: 'Bla bla bla'},
+    {nombre: 'Noticias', id: 'noticias', description: 'Noticias de prensa sobre nosotros'}] 
+- const icono = ?
+
+header#main-header.main-header
+    if (page == 1)
+        h1= titulo
+    else
+        -let 
+        h1 #{titulo} - #{tituloPagina}
+    nav.main-menu
+        ul
+            each item in aMenu
+                +itemMenu(item, index )
