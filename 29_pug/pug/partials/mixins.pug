@@ -1,7 +1,8 @@
-// Mixin
-mixin itemMenu(item)
+//- Mixin
+mixin itemMenu(item, index)
     li
-        a(href="#"+item.toLowerCase()+".html" title=item.description) #{item.nombre}
+        if (index == page -1)
+        a(href="#"+item.id.toLowerCase()+".html" title=item.description) #{item.nombre}
 
 mixin inputGroup(inputName)
     .form-group
