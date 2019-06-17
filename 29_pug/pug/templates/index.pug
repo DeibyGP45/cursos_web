@@ -1,76 +1,23 @@
-// esto es un comentario
-    esto sigue siento un comentario
-
-//-esto es un comentario
-
 -const page = 1
--let titulo = 'Hola'
--const charset = 'utf-8'
--const empresa = 'Colegio <b>tajamar</b>'
--const aPaises = [{nombre: 'España' id: 'es'},{nombre: 'Francia' id: 'fr'},{nombre: 'Italia' id: 'it'} ]
--const aMenu = ['Inicio','Clientes', 'Porfolio', 'Nosotros']
--const amenuP = ['Web', 'Mobile Apps', 'UX / UI']
--const amenuP = [{nombre: 'Inicio', id: 'Inicio', description: 'bla bla bla'}{nombre: 'Clientes', id: 'Clientes', description: 'bla bla bla'}{nombre: 'Porfolio', id: 'Porfolio', description: 'bla bla bla'}{nombre: 'Nosotros', id: 'Nosotros', description: 'bla bla bla'}{nombre: 'Web', id: 'Web', description: 'bla bla bla'}{nombre: 'Mobile Apps', id: 'Apps', description: 'bla bla bla'}{nombre: 'UX / UI', id: 'UX / UI', description: 'bla bla bla'}]
-
--let x = 5
-- x =x*x
-
-- funtion suma(x,y) {}
-
-// Mixin
-mixin itemMenu(item)
-    li
-        a(href="#"+item.toLowerCase() title=item.description) #{item.nombre}
-
-mixin inputGroup(inputName)
-    .form-group
-        label(for=inputName.toLowerCase()) ${inputName}:
-        block
-        p.error(hidden) Aquí iran los errores
-
-doctype
-html(lang=language)
-    head
-        meta(charset=charset)
-        link(rel="stylesheet", href="./CSS/style.css")
-        title #{titulo}
-    body
-        // Comentario
-        include ./partial/header.pug
-        header.main-header#main-header
-        -if(page == 1) {
-                h1=titulo
-        -} else 
-            h1 #{tiutlo} - Continuacion
-        nav
-            ul
+include ../partials/variables.pug
+include ../partials/mixins.pug
         
-            h1 Hola Pub
-        section
-            p.
-                Lorem ipsum <strong>dolor</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            p Lorem ipsum
-            b dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            .info Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui corporis optio laboriosam, assumenda consectetur ullam amet natus itaque doloremque aliquam. Consectetur optio maxime magnam reiciendis in asperiores praesentium hic aperiam.
-        section
-            form(action="")
-                select(name="pais")
-                    -for i=0; i <aPaises.length; i++ {
-                        -let item =aPaises[i]
-                        option(value=item.id) #{item.nombre}
-                        -}
-        section#porfolio
+include ../partials/meta.pug
+body
+    // Comentario
+    include ../partials/header.pug
+    main
+        section#inicio
             header
-                h2
-                    nav
-                        ul
-                            each item in aMenuP
-                                +itemmenu()
-        section#clientes
-            header
-                h2 Clientes 
-                nav
-                    ul
-                        each
-
-        include ../partials/footer.pug
+                h2 Inicio
+            p. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolor, <strong>quas mollitia</strong>, odio laboriosam dolorem aliquid quod 
+                fugiat repudiandae eum veritatis sed quo dolorum tempore nihil qui delectus quidem accusamus ab.
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit animi, sed distinctio cupiditate iure nesciunt aliquam illo iste quis quos aut voluptas magni corrupti sunt, at, rerum sapiente 
+                b laborum!
+            div.info Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt omnis illo reprehenderit nam deleniti excepturi, eaque corrupti iure, tempore incidunt, animi suscipit exercitationem! Eos sint voluptas impedit beatae, quos et!
+            figure
+                img(src="https://via.placeholder.com/500x350/" alt="Image placeholder")
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facilis dolor distinctio, itaque quo in aliquid iure reiciendis at? Nisi expedita quibusdam iusto cupiditate ad aut ipsam ab magni porro?        
+    include ../partials/footer.pug 
