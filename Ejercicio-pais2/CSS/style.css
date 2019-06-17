@@ -10,10 +10,9 @@
 
 body {
     font-family: Verdana;
-    background-color: #D5FFD9;
     margin: 0;
     background-image: url(../assets/Otros01.jpg);
-    background-color: #D5FFD9;
+    background-color: #D2A786;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -177,6 +176,7 @@ div.ad {
     width: 300px;
     height: 100px;
     max-width: 100%;
+    background-image: url(https://static.chollometro.com/threads/thread_large/default/168667_1.jpg);
     border-radius: 5px;
     }
 
@@ -326,7 +326,7 @@ div.ad {
     margin: 1rem 1rem;
     width: 160px;
     height: 600px;
-    background-image: url(https://i.pinimg.com/236x/cf/69/c7/cf69c706032dcbe8e7bff407bb24494d--in-depth-high-fiber-foods.jpg);
+    background-image: url(https://www.revistaaqua.com/wp-content/uploads/sam-pro-images/190125_Suunto_D5_banner_160x600.png);
     background-position: center
     }
 
