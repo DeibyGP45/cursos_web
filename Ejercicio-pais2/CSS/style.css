@@ -170,15 +170,14 @@ height: 100%;
 }
 
 div.ad {
-    background-color: rgba(128, 128, 128);
-    margin: -0.5rem 0rem;
-    padding: 1.5rem;
-    width: 300px;
-    height: 100px;
-    max-width: 100%;
-    background-image: url(https://static.chollometro.com/threads/thread_large/default/168667_1.jpg);
-    border-radius: 5px;
+
+    min-width: 300px;
+    min-height: 100px;
     }
+
+.ad .ad-big{
+    display:none
+} 
 
     
     .lateral {
@@ -322,13 +321,20 @@ div.ad {
             flex-direction: column-reverse;
              }
 
-    div.ad {
-    margin: 1rem 1rem;
-    width: 160px;
-    height: 600px;
-    background-image: url(https://www.revistaaqua.com/wp-content/uploads/sam-pro-images/190125_Suunto_D5_banner_160x600.png);
-    background-position: center
-    }
+             div.ad {
+                margin: 1rem 1rem;
+
+                    min-width: 160px;
+                    min-height: 600px;
+                    
+                }
+            
+                .ad-small {
+                    display:none
+                }
+                .ad .ad-big{
+                    display:block
+                } 
 
     
 
