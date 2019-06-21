@@ -1,0 +1,15 @@
+{
+  "name": "JS",
+  "version": "1.0.0",
+  "description": "ejercicios JS",
+  "main": "01_reinicio.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "David",
+  "license": "ISC",
+  "dev-dependencies": {
+    "jasmine": "^3.4.0"
+  }
+}
