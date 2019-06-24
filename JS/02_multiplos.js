@@ -35,38 +35,29 @@ console.log (acumulador, contador)
   * @returns {boolean}
   */
 function isMultiplo(m = 0,n = 0) {
+    if(isNaN(m) || isNaN(n)) {
+        throw new Error ('Paramentros no numericos')
+    }
     let r = true
-    if (n%m) { // n%m != 0
+    if (m%n) { // m%n != 0
         r = false
     }
     return r
 }
 
-//Espectativas
-//isMultiplo(2,20) -> true
-console.log('isMultiplo(2,20) debe dar true')
-//Prueba
-console.log(isMultiplo(2,20))
 
 
-//Espectativas
-//isMultiplo(2,21) -> false
-console.log('isMultiplo(2,21) debe dar false')
-//Prueba
-console.log(isMultiplo(2,21))
-
-//Espectativas
-//isMultiplo(3,21) -> false
-console.log('isMultiplo(3,21) debe dar true')
-//Prueba
-console.log(isMultiplo(3,21))
-
-//Espectativas
-//isMultiplo(3,-21) -> false
-console.log('isMultiplo(3,-21) debe dar true')
-//Prueba
-console.log(isMultiplo(3,-21))
-
+/**
+ * @description  Muestra un array con los multiplos de n
+ * @param {number} n 
+ * @param {array} aDatos 
+ * @returns {void}
+ */
+function mostrarMultiplos(n,aDatos) {
+    console.log(`los multiplos de ${n}`)
+    console.log(`En el array ${aDatos} son`)
+    console.log(extraerMultiplos(n,aDatos))
+}
 
 /** funcion extraerMultiplos
  * @description extraer de un array los multiplos de n
@@ -75,16 +66,20 @@ console.log(isMultiplo(3,-21))
  * @returns {array}
  */
 
- function extraerMultiplos (n, aDatos) {
 
-    let x = []
-    return r
- }
+ function extraerMultiplos (n = 0, aDatos = []) {
 
-
-
-
-
+    let r = []
+for (let i = 0; i < aDatos.length; i++) {
+    const item = aDatos[i];
+    if (isMultiplo(item,n)) {
+        /* r[r.length]= item */
+        r.push(item)
+        
+    }
+}
+return r
+}
 
 
 //if (n%m == 0) //if (!(n%m))
@@ -103,3 +98,12 @@ for (let i = 0; i < array.length; i++) {
 }
 n%3 == 0 */}
 
+module.exports = {}
+module.exports.isMultiplo = isMultiplo
+module.exports.extraerMultiplos = extraerMultiplos
+module.exports.mostrarMultiplos = mostrarMultiplos
+
+{
+   let aDatos = [1,2,3,4,5,6,7,8,9]
+   mostrarMultiplos(2,aDatos)
+}
