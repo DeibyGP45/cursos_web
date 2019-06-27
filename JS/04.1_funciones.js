@@ -27,7 +27,7 @@ sumaTotal= aResultados[0]
 aCuadrados = aResultados[1] */
 
 //let [sumaTotal, aCuadrados] = calcularSC(1,5,7,8)
-let [aCuadrados,sumaTotal] = calcularSC(1,5,7,8)
+let {aCuadrados,sumaTotal} = calcularSC(1,5,7,8)
 
 
 console.log(calcularSC(2,2,2,4))
