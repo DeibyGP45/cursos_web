@@ -1,58 +1,65 @@
-//Si estamos en Java, C##, PHP ...
+// Si estamos en Java, C## , PHP ...
 // Los objetos dependen de clases
+// class Persona {.....}
+// p1 = new Persona()
+// p2 = new Persona()
 
-// class Persona {}
-// p1  = new Persona ()
-// p2 = new persona()
+// En JS tenemos objetos literales
+// basados en la notacion JSON
 
 
-//EN JS tenemos objetos literales
-// basados en la notación JSON
 
 let p1 = {
-    nombre: 'pepe',
+    nombre: 'Pepe',
     edad: 33,
-    direccion:{
-        calle:'C/ pez',
-        numero:'12',
-        ciudad:'Madrid',
-        pais:'España',
-        
-    },
-    aficiones:['pintar','musica','montañismo'],
-    isAlumno: true,
-
+    direccion: {
+        calle: 'c/ Pez',
+        numero: '24',
+        ciudad: 'Cádiz',
+        pais: 'España'
+    }, 
+    aficiones : ['pintar', 'musica', 'montañismo'],
+    isAlumno: true
 }
 
 let p2 = {
-    nombre: 'rosa',
-    edad: 31,
-    isAlumno: true,
-    
+    nombre: 'Rosa',
+    edad: 35,
+    isAlumno: true
 }
 
 p1.altura = 179
-p1.colorPelo = "moreno"
+p2.colorPelo = "rubio"
+
 console.log(p1)
+console.log(p2)
 
 
 console.log(p1.nombre)
-console.log(p2.edad)
+console.log(p1.direccion.ciudad)
 console.log(p1.aficiones[0])
 
-let prop = 'edad'
-
+let prop = 'profesion'
+p2[prop] = 'escritora'
 console.log(p2[prop])
 
-for(const prop in p2) {
-    const value = p2[prop];
-    console.log(`la propiedad prop ${prop} vale ${value}`)
+for (const key in p2) {
+    const value = p2[key];  
+    console.log(`La propiedad ${key} vale ${value}`)  
 }
 
-console.log ("...............")
+console.log("..................")
 
-console.log('Mostrar ' + p1)
+console.log('Mostar ' + p1)
 
-for(const prop in p2) {
-    const value = p2[prop];
-    console.log(`la propiedad prop ${prop} vale ${value}`)
+for (const key in p1) {
+    const value = p1[key];  
+    console.log(`La propiedad ${key} vale ${value}`)  
+}
+
+let aDatos = ['perro', 'gato', 'caballo', 'ornitorrinco']
+
+for (const i in aDatos) {
+    const value = aDatos[i];
+    console.log(`La propiedad ${i} vale ${value}`) 
+}
