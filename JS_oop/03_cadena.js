@@ -21,3 +21,9 @@ const item = cadena[i];
   console.log(item)  
 }
 
+console.clear()
+
+let x = cadena.split(' ').join('').toUpperCase()
+console.log(x)
+
+
