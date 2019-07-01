@@ -1,4 +1,4 @@
-let x =34
+let x = 34
 /* x = 5 */
 console.log(x >= 0)
 
