@@ -41,7 +41,7 @@ cadena.charAt(position) //cadena [position]
 cadena.charCodeAt(position)
 
 String.fromCharCode(num) */
-console.clear()
+/* console.clear() */
 let numero = 23.7865432
 console.log(numero)
 console.log(numero.toString())
