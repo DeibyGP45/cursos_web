@@ -49,4 +49,4 @@ console.log(numero.toFixed(2))
 console.log(numero.toPrecision(4))
 
 console.log(numero.toExponential())
-console.log(numero.toLocaleString('es'))
+console.log(numero.toLocaleString('es-ES',{style: 'currency', currency: 'EUR'}))
