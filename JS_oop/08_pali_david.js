@@ -4,7 +4,7 @@ console.log(frase.length)
 
 
 /** function aPalin
- * @description 
+ * @description Convertir la frase del rever de izquierda a derecha
  * @param {string} frase
  * @returns
  */
@@ -14,9 +14,9 @@ console.log(frase.length)
 
     for (let i = 0; i < frase.length; i++) {
         const item = frase[i];
-        console.log(item)
+       // console.log(item)
     }
 
-    let x = frase.split(" ")
+    let x = frase.split(" ").reverse()
  
-    /* console.log(aPalin) */
+    console.log(x)
