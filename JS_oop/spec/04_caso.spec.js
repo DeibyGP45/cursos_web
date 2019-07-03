@@ -1,40 +1,44 @@
-let {comprobarCaso, mostrarComprobacionDeCaso }= require('../04_caso.js')
+let {comprobarCaso, mostrarComprobacionCaso} = require('../04_caso.js')
 
-describe('Function comprobarCaso',() => {
-    it ('should be 0 if all MAY', () => {
+describe('funcion comprobarCaso', () => {
+    it('should be 0 if all MAY', () => {
         const cadena = 'HOLA PEPE'
-        expect(comprobarCaso(cadena)).toEqual(0)
+        expect(comprobarCaso(cadena)).toEqual(0);
+        
     });
-    it ('should be 1 if all min', () => {
-        const cadena = 'hola pepe'
-        expect(comprobarCaso(cadena)).toEqual(1)
+
+    it('should be 1 if all min', () => {
+        const cadena = 'hola amigo'
+        expect(comprobarCaso(cadena)).toEqual(1);
     });
-    it ('should be 2 if all MAY & min', () => {
-        const cadena = 'Hola pepe'
-        expect(comprobarCaso(cadena)).toEqual(2)
+
+    it('should be 2 if MAY & min', () => {
+        const cadena = 'Hola Pepe'
+        expect(comprobarCaso(cadena)).toEqual(2);
     });
+
 });
 
-describe('Function mostrarComprobacionDeCaso',() => {
-    it ('should be "Solo mayúsculas" if all MAY', () => {
+describe('funcion mostrarComprobacionCaso', () => {
+    it('should be - solo mayúsculas- if all MAY', () => {
         const cadena = 'HOLA PEPE'
-        console.log(jasmine.createSpy("log"))
-        mostrarComprobacionDeCaso(cadena)
-        expect(console.log).toHaveBeenCalledWith('Solo mayúsculas')
+        console.log = jasmine.createSpy("log")
+        mostrarComprobacionCaso(cadena)
+        expect(console.log).toHaveBeenCalledWith('solo mayúsculas')
     });
 
-    it ('should be "Solo minusculas" if all min', () => {
-        const cadena = 'hola pepe'
-        console.log(jasmine.createSpy("log"))
-        mostrarComprobacionDeCaso(cadena)
-        expect(console.log).toHaveBeenCalledWith('Solo minusculas')
+    it('should be - solo minúsculas - if all min', () => {
+        const cadena = 'hola amigo'
+        console.log = jasmine.createSpy("log")
+        mostrarComprobacionCaso(cadena)
+        expect(console.log).toHaveBeenCalledWith('solo minúsculas')
     });
 
-    it ('should be "mayusculas o minusculas" if all MAY & min', () => {
-        const cadena = 'Hola pepe'
-        console.log(jasmine.createSpy("log"))
-        mostrarComprobacionDeCaso(cadena)
-        expect(console.log).toHaveBeenCalledWith('mayusculas o minusculas')
+    it('should be - mayusculas y minusculas - if MAY & min', () => {
+        const cadena = 'Hola Pepe'
+        console.log = jasmine.createSpy("log")
+        mostrarComprobacionCaso(cadena)
+        expect(console.log).toHaveBeenCalledWith('mayusculas y minusculas')
     });
 
 });
