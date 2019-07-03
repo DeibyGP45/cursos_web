@@ -33,13 +33,34 @@ let seleccion = nombres.slice(1,3)
         console.log(seleccion)
         console.log(nombres)
 
+        // CLONAR
+
+        let clon = nombres.slice()
+
     // Fraccionar arrays: mutable
 
-        let seleccion = nombres.splice(1, 3)
-        console.log(seleccion)
+        let eliminados = nombres.splice(1, 3, 'pedro','ernesto')
+        console.log(eliminados)
         console.log(nombres)
 
+    // splice para añadir
 
+        let paises = ['francia', 'italia', 'hungria', 'holanda']
+        console.log(paises.splice(2, 0,'españa'))
 
+        // Pila y colas
+
+        // PILA -> stack FiLO
+console.log(paises.push('portugal','alemania'))
         
+        // paises.pop()
+        console.log(paises)
+
+        // COLAS ->     heap FIFO
+
+        paises.unshift('croacia')
+        console.log(paises)
+        paises.shift()
+        console.log(paises)
+
 }

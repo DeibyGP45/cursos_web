@@ -3,8 +3,10 @@ let objeto = {} //new Object()
 
 let aDatos = [2, 8, 9 , 76, 'pepe'] // new Array()
 
-aDatos[aDatos.length] = [87, 90]
-aDatos[aDatos.length] = 56
+// aDatos[aDatos.length] = [87, 90]
+//aDatos[aDatos.length] = 56
+
+aDatos.push(87,56)
 
 aDatos[100] = 9
 
