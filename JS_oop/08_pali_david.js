@@ -1,5 +1,5 @@
-let frase = ["La ruta nos aporto otro paso natural"]
-
+let frase = "La ruta nos aporto otro paso natural"
+console.clear()
 console.log(frase.length)
 
 
@@ -10,15 +10,13 @@ console.log(frase.length)
  */
 
 
- function aPalin(frase) {
+ /* function aPalin(frase) */
 
     for (let i = 0; i < frase.length; i++) {
         const item = frase[i];
         console.log(item)
     }
 
-    
-    let x = frase.split('').reverse()
+    let x = frase.split(" ")
  
-
- console.log(aPalin)
+    /* console.log(aPalin) */
