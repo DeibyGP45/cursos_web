@@ -39,7 +39,7 @@ aDatos.forEach(
     let aUsuarios = ['rosa', 'raquel', 'elena', 'maria']
 
     console.log(aUsuarios.map(item => item.toUpperCase()))
-
+console.log('-------------')
 // Filtros de array
 
     /* function pares(aDatos= [   ]) {
