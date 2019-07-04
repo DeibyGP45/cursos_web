@@ -19,7 +19,7 @@
     console.log(aNumerosOriginal.reverse())
     console.log(aNumerosOriginal)
 
-console.clear()
+/* console.clear() */
 
 
         let nombres = ['Luis','Rosa','Mario','Sara']
