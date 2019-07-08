@@ -23,8 +23,10 @@ function Articulo(descripcion, codigo, precio) {
 		let msg = 
 	`
 		Producto : ${this.descripcion}
+
 		Codigo: ${this.codigo}
-		Importe : ${this.precio} 		Mas IVA: ${this.mIVA()}`
+		Importe : ${this.precio} 		Mas IVA: ${this.mIVA()}
+		`
 		console.log(msg)
 	}
 
