@@ -1,8 +1,5 @@
 
 
-
-
-
 function Factura(clientes) {
 
     const empresa = {
@@ -80,7 +77,14 @@ Factura.prototype.comprarElemento = function (Elemento) {
     this.elementos.push(Elemento)
 } 
 
+Factura.prototype.ImporteFactura = function () {}
+
+/* Factura.prototype.ToString() = function () {
+    return `${this.descripcion},${this.precioUnidad},${this.cantidad}`
+} */
+
 //----------------------------------
+
 
 const cl01 = new Cliente ('David garcia','C/ mari','698532675','50363458d')
 
