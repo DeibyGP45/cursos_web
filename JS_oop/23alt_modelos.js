@@ -28,7 +28,7 @@ Añadir al menos dos métodos:
 */
 
 
-const {fechaEsp, fijarLongitudCadena} = require('./15_helpers.js')
+//const {fechaEsp, fijarLongitudCadena} = require('./15_helpers.js')
 
 function Factura (  empresa = {}, 
                     cliente = {},

@@ -1,6 +1,6 @@
-const {Compra, Factura} = require('./23_modelos.js')
-const {tuata, boracai, pepita} = require('./23_empresas.js')
-const {libros, revistas} = require('./23_productos.js')
+const {Compra, Factura} = require('./23alt_modelos.js')
+const {tuata, boracai, pepita} = require('./23alt_empresas.js')
+const {libros, revistas} = require('./23alt_productos.js')
 
 const items1 =  [[0, 12], [1, 12], [2, 8], [3, 11]] 
     .map(a => new Compra(libros[a[0]], a[1]))

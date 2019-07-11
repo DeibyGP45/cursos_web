@@ -1,5 +1,5 @@
     
-const {Item} = require('./23_modelos.js')
+const {Item} = require('./23alt _modelos.js')
 
 module.exports = {}
 
