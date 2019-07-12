@@ -51,12 +51,24 @@ console.log(isValidNumber(45))
  *          en caso de valores no validos , genera un error
  * @param {*} n 
  */
-function calcularFactorial(n = 0) {
+function calcularFactorial(n) {
 
-let r = 0
 
-let factorial
+let factorial = 1;
+ 
+        for (var i=1; i <= n; i++){ 
 
-return r
+// Si i es menor o igual que n , i = i + 1
+
+            factorial *= i;
+        }
+
+return factorial
     
 }
+
+
+
+// SALIDA
+
+document.write(calcularFactorial(4));
