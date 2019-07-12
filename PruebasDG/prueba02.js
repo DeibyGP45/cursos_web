@@ -14,7 +14,10 @@
  * 
  */
 
-/**
+
+ 
+
+/** function isValidNumber
  * @description Funcion booleana que comprueba que un valor puede ser tratado como numero 
  *
  * @param {number} n 
@@ -85,11 +88,11 @@ console.log(calcularFactorial(4));
 
 function mostrarNumero() {
 
-    return `El numero factorial de ${n} es el ${}`
-    
-}
+        return //`El numero factorial de ${n} es el ${}`
+        
+    }
 
-console.log(mostrarNumero())
+    console.log(mostrarNumero())
 
 
 console.log("-----------")
