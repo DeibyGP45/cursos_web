@@ -39,11 +39,24 @@ let r = true
     
 }
 
-console.log(isValidNumber(45))
+console.log(isValidNumber(0))
 
-/* function ComprobarFactorial () {
-    
-} */
+
+/**  ---2---  Function ComprobarFactorial
+ * 
+ * @description Funcion que comprueba que es un numero válido para poder calcular un factorial
+ * 
+ */
+ function ComprobarFactorial (n) {
+
+
+    if (n < 0) {
+        return 'Parametros incorrectos'
+    }
+        return 'Parametros Correctos'
+} 
+
+console.log(ComprobarFactorial(0))
 
 
 /** --3---
@@ -56,19 +69,27 @@ function calcularFactorial(n) {
 
 let factorial = 1;
  
-        for (var i=1; i <= n; i++){ 
+        for (var i=1; i <= n; i++){ // (expresion inicial, condicion, expresión)
 
 // Si i es menor o igual que n , i = i + 1
 
-            factorial *= i;
+            factorial *= i; // 
         }
 
 return factorial
     
 }
 
+console.log(calcularFactorial(4));
 
 
-// SALIDA
+function mostrarNumero() {
 
-document.write(calcularFactorial(4));
+    return `El numero factorial de ${n} es el ${}`
+    
+}
+
+console.log(mostrarNumero())
+
+
+console.log("-----------")
