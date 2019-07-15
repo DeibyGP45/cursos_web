@@ -15,7 +15,7 @@ module.exports = class Helper {
         if ( isNaN(n) 
             || typeof n == 'boolean' 
             || n === ''
-            || typeof n == 'object' 
+            || typeof n ==  'object' 
             // || Array.isArray(n)   || n === null
         ) {
             r = false

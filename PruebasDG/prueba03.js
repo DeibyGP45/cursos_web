@@ -25,7 +25,7 @@
  * 
  */
 
-const empresa = {
+const empresa = { // EMPRESA 
 
         Nombre: "LIBRER SA",
         Telefono: "645273756",
@@ -33,7 +33,7 @@ const empresa = {
 
 }
 
-const cliente = {
+const cliente = { // CLIENTE - EMPRESA 
         Nombre: "David A",
         Direccion: "Santiago 6"
 }
@@ -43,23 +43,30 @@ function Elemento(descripcion,precioUnidad,cantidad) {
     this.descripcion = descripcion
     this.precioUnidad =  precioUnidad
     this.cantidad = cantidad
-    let msg = ` ${descripcion} ${precioUnidad} ${cantidad}`
-    return msg
+}
+
+function factura () {
+        
+        
+}
+
+ Elemento.prototype.mostrarElementos = function () {
+         
+        let msg = ` ${this.descripcion} ${this.precioUnidad} ${this.cantidad}`
+        return msg
 }
 
   const elemento01 = new Elemento ('Libro A', 20, 10)
 
 
 
-function generarFactura () {
+// function generarFactura () {}
 
-}
+//function mostrarFactura() {}
 
+console.log()
 
-function mostrarFactura() {
-}
-
-console.log(Elemento())
+Elemento.m
 
 let x = []
 
