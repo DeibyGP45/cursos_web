@@ -41,7 +41,7 @@ function Elemento(descripcion,precioUnidad,cantidad) {
     this.cantidad = cantidad
 }
 
-function factura (empresa,cliente,elementos) {
+function Factura (empresa,cliente,elementos) {
         /**
          * Empresa Librer
          * 
@@ -63,15 +63,19 @@ function factura (empresa,cliente,elementos) {
 }
 
 Factura.prototype.mostrarFactura = function () {
-        let msg = ` ${this.empresa} ${this.cliente} ${this.cantidad}`
+        let msg = `
+                ${this.empresa}
+                 ${this.cliente}
+                ${this.cantidad}
+           `
         return msg
 }
 
- Elemento.prototype.mostrarElementos = function () {
+/*  Elemento.prototype.mostrarElementos = function () {
          
         let msg = ` ${this.} ${this.} ${this.}`
         return msg
-}
+} */
 
   const el01 = new Elemento ('Libro A', 20, 2)
 
@@ -85,7 +89,7 @@ Factura.prototype.mostrarFactura = function () {
 
 //function mostrarFactura() {}
 
-console.log(el01)
+console.log(el01.cantidad)
 
 Elemento.m
 

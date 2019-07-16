@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>JS en la web</title>
+</head>
+
+<body>
+    <header>
+        <h1>JS en la Web</h1>
+    </header>
+    <main>
+        <section>
+            <header>
+                <h2>Elementos de la web desde JS</h2>
+                <ul>
+                    <li>Eventos</li>
+                    <li>Document Object Model (DOM)</li>
+                    <ul>
+                        <li>botones</li>
+                        <li>input</li>
+                    </ul>
+                </ul>
+            </header>
+        </section>
+        <section>
+            <div class="container">
+
+                <div id="btn-normal">
+                    <button>Saludar</button>
+                </div>
+
+                <div id="btn-super" class="btn-super">
+                    <button>No tocar</button>
+                </div>
+            </div>
+                <div>
+                    <label for="nombre">Tu nombre</label>
+                    <input type="text" id="in-nombre">
+                </div>
+                <div class="output">
+                    <output id="out-saludo"></output>
+                </div>
+        </section>
+        <section>
+            <h2>Doble binding</h2>
+            <div>
+                <label for="in-nombre2">Tu nombre</label>
+                <input type="text" name="nombre" id="in-nombre2">
+            </div>
+            <div class="output">
+                    <output id="out-saludo2"></output>
+                </div>
+        </section>
+
+    </main>
+    <footer>
+        <address>
+            David Garcia
+        </address>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
