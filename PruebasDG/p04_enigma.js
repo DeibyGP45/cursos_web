@@ -20,7 +20,7 @@
             let cadenaFrase = []
             for (let i = 0; i < frase.length; i++) {
                 const caracter = frase[i];
-                   cadenaFrase.push(caracter) 
+                   cadenaFrase.push(caracter.charCodeAt()) 
                      }
                  console.log(cadenaFrase) 
             }
