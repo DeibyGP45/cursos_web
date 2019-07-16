@@ -1,5 +1,5 @@
 
-/**
+/**DATOS
  * Librer SA
  * 
  * david a
@@ -10,7 +10,7 @@
  * 
  * 
  * Libro de 20e compro 2ud.
- * Lapices de 2e compro 10e 
+ * Lapices de 2e compro 10ud.
  * 
  * Iva 21%
  * 
@@ -25,17 +25,13 @@
  * 
  */
 
-const empresa = { // EMPRESA 
 
-        Nombre: "LIBRER SA",
-        Telefono: "645273756",
+function Empresa (nombre,direccion,telefono) {
 
-
-}
-
-const cliente = { // CLIENTE - EMPRESA 
-        Nombre: "David A",
-        Direccion: "Santiago 6"
+        this.nombre = nombre
+        this.direccion = direccion
+        this.telefono = telefono
+        
 }
 
 function Elemento(descripcion,precioUnidad,cantidad) {
@@ -45,29 +41,54 @@ function Elemento(descripcion,precioUnidad,cantidad) {
     this.cantidad = cantidad
 }
 
-function factura () {
+function factura (empresa,cliente,elementos) {
+        /**
+         * Empresa Librer
+         * 
+         * cliente 
+         * 
+         * Datos factura 
+         * 
+         * Elementos 
+         * 
+         * importe + iva = total
+         */
+
+         this.empresa = empresa
+         this.cliente = cliente
+         this.datosFactura =
+         this.elementos = elementos
+
         
-        
+}
+
+Factura.prototype.mostrarFactura = function () {
+        let msg = ` ${this.empresa} ${this.cliente} ${this.cantidad}`
+        return msg
 }
 
  Elemento.prototype.mostrarElementos = function () {
          
-        let msg = ` ${this.descripcion} ${this.precioUnidad} ${this.cantidad}`
+        let msg = ` ${this.} ${this.} ${this.}`
         return msg
 }
 
-  const elemento01 = new Elemento ('Libro A', 20, 10)
+  const el01 = new Elemento ('Libro A', 20, 2)
 
+  const el02 = new Elemento('Lapiz HB',2, 10)
 
+  const cliente  = new Empresa ("david a","Santiago 6","639218173")
+
+  const librerEmpresa = new Empresa ("LIBRER SA","Av Foso 12","645273756")
 
 // function generarFactura () {}
 
 //function mostrarFactura() {}
 
-console.log()
+console.log(el01)
 
 Elemento.m
 
-let x = []
+// let x = []
 
 
