@@ -22,10 +22,12 @@
                 const caracter = frase[i];
                    cadenaFrase.push(caracter.charCodeAt()) 
                      }
-                 console.log(cadenaFrase) 
+
+                     
+                 console.log(cadenaFrase.toLocaleString())
             }
            
-        separarLetras('lol')
+        separarLetras('abcedario')
 
         
        
