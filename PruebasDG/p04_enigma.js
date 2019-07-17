@@ -7,27 +7,31 @@
  * 
  */
 
-/** Function Separar
+/** Function Encriptar
  * 
  * @description
  * @param {String} frase
- * @returns {Array} cadenaFrase
+ * @param {Array} cadenaFrase
+ * @returns {} cadenaFrase
  * 
  */
 
-    function separarLetras(frase = '') {
+    function encriptarLetras(frase = '') {
 
             let cadenaFrase = []
+            let cadenaFrase2 = ''
+
             for (let i = 0; i < frase.length; i++) {
                 const caracter = frase[i];
-                   cadenaFrase.push(caracter.charCodeAt()) 
+                   cadenaFrase.push(caracter.charCodeAt())
+                   cadenaFrase2 += JSON.stringify(caracter.charCodeAt())  
                      }
-
-                     
-                 console.log(cadenaFrase.toLocaleString())
+                 //console.log(cadenaFrase)
+                 console.log(cadenaFrase2)
+                 //JSON.stringify
             }
            
-        separarLetras('abcedario')
+        encriptarLetras('Eres el mejor')
 
         
        
