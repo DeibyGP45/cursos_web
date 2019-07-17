@@ -1,5 +1,4 @@
-console.log("Cargada app")
-console.dir("Cargada app")
-console.error("Cargada app")
-console.info("Cargada app")
-console.table("Cargada app")
+
+export function app() {
+    console.log("Cargada app")
+}
