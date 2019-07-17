@@ -12,7 +12,7 @@
  * @description
  * @param {String} frase
  * @param {Array} cadenaFrase
- * @returns {} cadenaFrase
+ * @returns {String} 
  * 
  */
 
