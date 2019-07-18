@@ -30,7 +30,7 @@ export class App {
     this.aBtns.forEach( (btn) => {btn.addEventListener('click', this.onBtnClick.bind(this))}) // bind --fijar
 
     //btnNormal.onclick = saludar
-    // btnNormal.addEventListener('click', onBtnClick)
+    // 
     //btnSuper.onclick = protestar
     // btnSuper.addEventListener('click', onBtnClick)
 

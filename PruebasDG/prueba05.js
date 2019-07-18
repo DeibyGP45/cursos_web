@@ -16,19 +16,20 @@ console.log(numeroMedia(2, 3, 5, 7, 8, 100))
 
 }
 
-////
 
-function numeroPaDoble() {
-    let cadena = [1, 3, 5, 9]
-
-    /* for (let i = 0; i < cadena.length; i++) {
-        const item = cadena[i];
-        
-    } */
+{// EJEMPLO DE ARRAY.MAP
+ let cadena = [1, 3, 5, 9]
     
-    const cadenaDoble = cadena => cadena.map( cadena =>  cadena * 2)
+    let cadenaDoble = cadena.map( cadena =>  cadena * 2) // Nue variable = Array.map ( Array => Array *2  )
     
 console.log(cadenaDoble)
 }
 
-numeroPaDoble()
+{
+    let cadena2 =  [2, 4, 5, 6]
+
+    let cadenaSumar = cadena2.reduce()
+
+    console.log(cadenaSumar)
+
+}
