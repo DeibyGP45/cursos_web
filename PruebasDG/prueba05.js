@@ -16,7 +16,6 @@ console.log(numeroMedia(2, 3, 5, 7, 8, 100))
 
 }
 
-
 {// EJEMPLO DE ARRAY.MAP
  let cadena = [1, 3, 5, 9]
     
@@ -25,11 +24,12 @@ console.log(numeroMedia(2, 3, 5, 7, 8, 100))
 console.log(cadenaDoble)
 }
 
-{
+{// ARRAY.REDUCE
     let cadena2 =  [2, 4, 5, 6]
 
-    let cadenaSumar = cadena2.reduce()
+    let cadenaSumar = cadena2.reduce((cons,n) => cons + n )
 
     console.log(cadenaSumar)
 
 }
+

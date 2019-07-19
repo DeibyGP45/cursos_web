@@ -25,6 +25,7 @@
  * 
  */
 
+ const {elementos,el02,cliente, librerEmpresa} = require ('./prueba03_datos')
 
 function Empresa (nombre,direccion,telefono) {
 
@@ -63,7 +64,8 @@ function Factura (empresa,cliente,elementos) {
 }
 
 Factura.prototype.mostrarFactura = function () {
-        let msg = `
+        let msg = 
+        `
                 ${this.empresa}
                  ${this.cliente}
                 ${this.cantidad}
@@ -77,21 +79,19 @@ Factura.prototype.mostrarFactura = function () {
         return msg
 } */
 
-  const el01 = new Elemento ('Libro A', 20, 2)
-
-  const el02 = new Elemento('Lapiz HB',2, 10)
-
-  const cliente  = new Empresa ("david a","Santiago 6","639218173")
-
-  const librerEmpresa = new Empresa ("LIBRER SA","Av Foso 12","645273756")
-
 // function generarFactura () {}
 
 //function mostrarFactura() {}
 
+
+ //const fact01 = new Factura (librerEmpresa,cliente,el01)
+
 console.log(el01.cantidad)
 
-Elemento.m
+console.log(fact01.mostrarFactura())
+
+module.exports.Elemento = Elemento
+module.exports.Empresa = Empresa
 
 // let x = []
 
