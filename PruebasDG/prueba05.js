@@ -33,3 +33,9 @@ console.log(cadenaDoble)
 
 }
 
+let cadena = "Esto no es buena practica"
+
+let x = cadena.split(' ').join('').toUpperCase()
+console.log(x)
+
+

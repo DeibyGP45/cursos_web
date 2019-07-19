@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstap.js"></script>
+    <title>Analizar Frase</title>
+    <style>
+        .botones {
+
+            display: flex;
+            flex-direction: column
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analiza Frase</h1>
+    </header>
+    <main>
+
+        <div>
+            <label for="Frase">Escribe frase:</label>
+            <input type="text" id="in-frase">
+        </div>
+        <div class="botones">
+            <button id="n-palabras">Numero de Palabras</button>
+            <button>longitud media de las palabras</button>
+            <button>veces cada letra</button>
+            <button>frecuencia cada letra</button>
+
+        </div>
+        <div>
+            <output id="out-result"></output>
+        </div>
+    </main>
+    
+</body>
+</html>
