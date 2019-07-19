@@ -25,7 +25,7 @@
  * 
  */
 
- const {elementos,el02,cliente, librerEmpresa} = require ('./prueba03_datos')
+ const {el01,el02,cliente, librerEmpresa} = require ('./prueba03_datos')
 
 function Empresa (nombre,direccion,telefono) {
 
