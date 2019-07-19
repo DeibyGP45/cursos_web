@@ -9,7 +9,7 @@
  * Incorporar un interface Web de entrada y salida
  */
 
-let frase = "He echo lo que he podido"
+let frase = "He echo lo que he podido profesor"
 
    {/** function numeroPalabras
     * @description Funcion que cuenta el numero de palabras
@@ -41,7 +41,7 @@ let frase = "He echo lo que he podido"
     
    function mediaPalabras (cadena) {
       
-      let cadenaArray = cadena.split(' ').map( (cadena) => cadena.length)
+      let cadenaArray = cadena.split(' ').map(cadena => cadena.length)
 
       cadenaMedia = cadenaArray.reduce( (cons,n) => (cons + n)/2)
 
