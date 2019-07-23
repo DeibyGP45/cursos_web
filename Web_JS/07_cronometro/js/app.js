@@ -9,7 +9,6 @@ export class App {
     this.output = document.querySelector('output')
     this.handle = 0
     this.time = 0
-    
 
 
     this.btnPlayPause.addEventListener('click',this.play)
@@ -20,7 +19,7 @@ export class App {
 
         this.handle = setInterval( () => {
             this.time += 1
-            this.render()
+             this.render()
         },1000)
 
     }
@@ -37,8 +36,8 @@ export class App {
     }
 
     render() {
-        this.output.value = this.time
 
+        this.output.value = this.time
     }
 
 }
