@@ -6,6 +6,10 @@ export function app () {
 
 
 
+
+let animales = []
+
+
 // NODos
 let inAnimal = document.querySelector('#in-animal')
 let outAnimal = document.querySelector('#output')
@@ -14,20 +18,11 @@ let outAnimal = document.querySelector('#output')
 
 inAnimal.addEventListener('change',addAnimal)
 
-let animales = []
 
-// Existe estorage??
-
-if (localStorage.getItem('animales')) {
-    animales =  JSON.parse(localStorage.getItem('animales'))
-    render() 
-}
-// Function 
+// Funtion 
 
     function addAnimal() {
         animales.push(inAnimal.value)
-        localStorage.setItem('animales',JSON.stringify(animales))
-        console.log(JSON.stringify(animales))
         inAnimal.value = ''
 
         render()
