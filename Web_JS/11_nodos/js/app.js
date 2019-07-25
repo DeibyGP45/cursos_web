@@ -3,8 +3,8 @@ export function app() {
     console.log("Cargada app")
 
     // Nodos
-    let aEnlaces = document.querySelectorAll('.social a')
-    let lista = document.querySelectorAll('.social ul')
+    let aEnlaces = document.querySelectorAll('#social a')
+    let lista = document.querySelectorAll('#social ul')
     let counter = 0
 
     console.log(aEnlaces)
@@ -18,14 +18,15 @@ export function app() {
     function onClickEnlace(ev) {
 
         
-        if (counter <= 2) {
+        if (counter < 2) {
 
             ev.target.parentElement.outerHTML = "Ops!"
-            counter++
+            console.log(counter++)
+        }else {
+            ev.target.parentElement.parentElement.outerHTML = 'Puuf, que pena !! '
         }
-            ev.target.parentElement.parentElement.parentElement.outerHTML = 'Puuf, que pena !! '
             
-let origen = document.querySelector('.addNodos div')
+let origen = document.querySelector('#addNodos div')
         console.dir(origen)
         let txtHTML = `<p>Creado desde JS</p>`
         origen.innerHTML = txtHTML
