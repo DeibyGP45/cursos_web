@@ -124,7 +124,8 @@ nav ul {
 .active {
 
     background-color: bisque;
-    color: black
+    color: black;
+    padding: 0.4rem
     
 }
 
@@ -135,3 +136,37 @@ nav a {
 
 }
 
+nav li {
+
+    display: block;
+    padding: 0.1rem
+}
+
+.img-wrapper {
+    max-width: 50%;
+    float: left;
+    padding: 0.5rem 1rem;
+
+}
+
+.img-wrapper-left {
+    float: left;
+}
+
+.img-wrapper-right {
+    float: right;
+    
+}
+.img-wrapper img {
+    width: 100%
+}
+
+.dlg-img {
+
+    height: 90%
+}
+
+.dlg-img img{
+
+    width: 100%
+}
