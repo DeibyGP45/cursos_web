@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <script src="./js/bootstap.js" type="module"></script>
+
+    <title>JS en la web</title>
+</head>
+
+<body>
+    <header>
+        <h1>JS en la Web</h1>
+    </header>
+    <main>
+
+        <section id="form">
+            <header>
+
+
+                <form action="https://jsonplaceholder.typicode.com/users" name="complete-post" method="POST">
+                    <fieldset id="Datos_personales">
+                        <legend>Datos personales</legend>
+                        <label for="userName" class="form_label">Nombre</label>
+
+                        <input type="text" name="userName" id="userName" class="form_control"
+                            placeholder="Escribe tu nombre" required>
+
+
+                        <label for="userPasswd" class="form_label">Contraseña</label>
+
+                        <input type="password" name="userPasswd" id="userPasswd" class="form_control form_class"
+                        pattern="^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})"
+                            placeholder="Contraseña" required minlength="8" maxlength="16">
+
+                        <label for="email" class="form_label">Correo</label>
+                        <input type="email" name="email" id="email" class="form_control"
+                            placeholder="Escribe Correo electrónico">
+
+                        <datalist id="formacion">
+                            <option>Graduado</option>
+                            <option>Licenciado</option>
+                            <option>Doctor</option>
+                        </datalist>
+                        <label for="birthDate">Fecha de nacimiento</label>
+                        <input type="date" name="birthDate" id="birthDate" class="form_control">
+
+                        <label for="cv" class="form_label">formación</label>
+                        <input type="text" name="cv" id="cv" placeholder="Seleciona o indica tus estudios"
+                            list="formacion" class="form_control">
+
+                        <label for="text" class="form_label">Más información</label>
+
+                        <textarea name="info" id="info" class="form_control" rows="5"
+                            placeholder="Más información"></textarea>
+                    </fieldset>
+
+                    <fieldset id="Condiciones">
+                        <legend>Condiciones</legend>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit cum minima illum
+                            omnis vender tu vida al diabl8 magnam harum at et Modi cupiditate asperiores soluta
+                            corrupti numquam minus atque, ratione sint assumenda UwU</p>
+                        <input type="checkbox" name="is=Ok" id="isOk" required>
+                        <label for="isOk">No lo he leido pero estoy de acuerdo con las Condiciones</label>
+                    </fieldset>
+
+                    <fieldset id="Datos_del_curso">
+                        <legend>Datos del curso</legend>
+                        <label for="curso" class="form_label">Curso</label>
+                        <select name="curso" id="curso" class="form_control" required>
+                            <option value="">Elige un curso</option>
+                            <optgroup label="Font-end">
+                                <option value="HTML-01">HTML5</option>
+                                <option value="CSS-02">CSS3</option>
+                                <option value="JS-03">JavaScript</option>
+                            </optgroup>
+                            <optgroup label="Back-end">
+                                <option value="Node-04">Node JS</option>
+                                <option value="PHP-05">PHP</option>
+
+
+                            </optgroup>
+                        </select>
+                        <p>Ubicaciones</p>
+                        <input type="radio" name="sitio" id="madrid" value="MAD">
+                        <label for="madrid">Madrid</label>
+                        <input type="radio" name="sitio" id="sevilla" value="SEV">
+                        <label for="sevilla">Sevilla</label>
+                        <input type="radio" name="sitio" id="barcelona" value="BAR">
+                        <label for="barcelona">Barcelona</label>
+                    </fieldset>
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+
+
+                <div class="clearfix"></div>
+
+
+
+                <dialog class="dlg-confirm">
+                    <h3>¿Desea confirmar los datos?</h3>
+                    <ul> </ul>
+                    <div>
+                        <button>Sí</button>
+                        <button>No</button>
+                    </div>
+
+
+                </dialog>
+
+            </header>
+        </section>
+
+    </main>
+
+    <footer>
+        <address>
+            David Garcia
+        </address>
+    </footer>
+
+</body>
+
+</html>
