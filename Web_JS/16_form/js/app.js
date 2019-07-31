@@ -36,7 +36,7 @@ export function app() {
     // Definir manejadores
 
     form.addEventListener('submit', onSubmit)
-    aDlgBtn.addEventListener('click', onClickDlg)
+    aDlgBtn.addEventListener('click', onClickDlg) //
 
     // funciones manejadoras de evento
 
