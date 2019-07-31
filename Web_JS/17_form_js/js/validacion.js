@@ -1,3 +1,5 @@
+import { comprobarDNI } from "./helper.js";
+
 export function validation () {
 
     let userName = document.querySelector('#userName')

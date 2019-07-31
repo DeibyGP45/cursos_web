@@ -35,13 +35,19 @@
 
                         <input type="password" name="userPasswd" id="userPasswd" class="form_control form_data"
                         pattern="(?=^.{6,255}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*"
-                            placeholder="Contraseña" >
+                            placeholder="Contraseña" required >
 
                             <!-- required minlength="8" maxlength="16" -->
 
                         <label for="email" class="form_label">Correo</label>
                         <input type="email" name="email" id="email" class="form_control form_data"
-                            placeholder="Escribe Correo electrónico">
+                            placeholder="Escribe Correo electrónico"> 
+
+
+                                <!--  -->
+                            <label for="dni" class="form_label">D.N.I</label>
+                        <input type="dni" name="dni" id="dni" class="form_control form_data"
+                            placeholder="Escribe tu DNI incluida a letra">
 
                         <datalist id="formacion">
                             <option>Graduado</option>

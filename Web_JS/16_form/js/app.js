@@ -1,25 +1,15 @@
+import { comprobarDNI } from "./helper";
 
 export function app() {
     console.log("Cargada app")
 
-    // Nodos del DOM
 
-    let form = document.querySelector('[name="complete-post"]')
-    //let btnReseet = document.querySelector('')
-    let aFormData = document.querySelectorAll('.form_data') //
-    let aCheckBox = document.querySelectorAll('[type="checkbox"]')
-    let aSelects = document.querySelectorAll('select')
-    let aRadioSitio = document.querySelectorAll('[name="sitio"]')
-
-    let dlgConfirm = document.querySelector('.dlg-confirm')
-    let aDlgBtn = document.querySelectorAll('.dlg-confirm button')
-
-
-    let oDatos = {
+let oDatos = {
 
         userName: '',
         userPasswd: '',
         email: '',
+        dni: '',
         birthDate: '',
         cv: '',
         info: '',
@@ -30,13 +20,43 @@ export function app() {
 
     }
 
+    let oDatosPretty =  {
+        userName: 'Nombre de Usuario',
+        userPasswd: 'Contraseña',
+        email: 'Correo electrónico',
+        dni: 'DNI',
+        cv: 'Formación',
+        birthDate: 'Fecha de nacimiento',
+        info: 'Más información',
+        isOk: 'Condiciones aceptadas',
+        curso: 'Curso',
+        sitio: 'Sitio',    
+    }
 
 
+    // Nodos del DOM
+
+    let form = document.querySelector('[name="complete-post"]')
+            //let btnReseet = document.querySelector('')
+    let aFormData = document.querySelectorAll('.form_data') //
+    let aCheckBox = document.querySelectorAll('[type="checkbox"]')
+    let aSelects = document.querySelectorAll('select')
+    let aRadioSitio = document.querySelectorAll('[name="sitio"]')
+
+    let dlgConfirm = document.querySelector('.dlg-confirm')
+    let aDlgBtn = document.querySelectorAll('.dlg-confirm button')
+
+
+    
 
     // Definir manejadores
 
     form.addEventListener('submit', onSubmit)
-    aDlgBtn.forEach(btn => btn.addEventListener('click', onClickDlg)) //
+    aDlgBtn.forEach(btn => btn.addEventListener('click', onClickDlg))
+    
+    
+    //aFormData[3].setCustomValidity('Letra DNI incorrecta')
+    console.dir(aFormData[3])
 
     // funciones manejadoras de evento
 
@@ -57,6 +77,14 @@ export function app() {
 
         console.log(oDatos)
         console.dir(aSelects[0])
+
+    }
+
+    function onClickSubmit(ev) {
+        aFormData[3].setCustonValidity('')
+        if (!aFormData[3].value && !comprobarDNI(aFormData[3].value)) {
+            aFormData[3].setCustonValidity('')
+        }
 
     }
 
@@ -94,12 +122,14 @@ export function app() {
 
         for (const key in oDatos) {
             const value = oDatos[key];
-            if (key == 'userPasswd') {
+            if( key == 'userPasswd'){
 
-                html += `<li> ${key} --> ******* </li>`
+                html += `<li> ${oDatosPretty[key]} --> ******* </li>`
 
+            } else if (key === 'isOk') {
+                html += `<li>${oDatosPretty[key]}</li>`
             } else {
-                html += `<li> ${key} --> ${value} </li>`
+            html += `<li> ${oDatosPretty[key]} --> ${value} </li>`
             }
         }
 
