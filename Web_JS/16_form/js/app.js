@@ -77,36 +77,36 @@ export function app() {
                 return item.value
             }
         }
+    }
+    function onClickDlg(ev) {
 
-        function onClickDlg (ev) {
+        if (ev.target.textContent.toLowerCase() === 'Sí') {
 
-            if(ev.target.textContent.toLowerCase() === 'Sí') {
-
-                //Enviar de verdad
-                form.submit()
-            } 
-            dlgConfirm.close()
+            //Enviar de verdad
+            form.submit()
         }
+        dlgConfirm.close()
+    }
 
-        function renderModal(params) {
+    function renderModal(params) {
 
-            let html = ''
+        let html = ''
 
-            for (const key in oDatos) {
-                    const value = oDatos[key];
-                    if( key == 'userPasswd'){
+        for (const key in oDatos) {
+            const value = oDatos[key];
+            if (key == 'userPasswd') {
 
-                        html += `<li> ${key} --> ******* </li>`
+                html += `<li> ${key} --> ******* </li>`
 
-                    } else {
-                    html += `<li> ${key} --> ${value} </li>`
-                    }
-                }
-
-                dlgConfirm.children[1].innerHTML = html
-                dlgConfirm.showModal()
+            } else {
+                html += `<li> ${key} --> ${value} </li>`
             }
         }
 
-
+        dlgConfirm.children[1].innerHTML = html
+        dlgConfirm.showModal()
     }
+
+
+
+}

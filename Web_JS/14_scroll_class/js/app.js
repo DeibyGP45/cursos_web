@@ -138,7 +138,7 @@ constructor() {
         console.log(this.aOffsets[i])
         window.scrollTo(0,this.aOffsets[i]-90)
 
-        setActive(i)
+        this.setActive(i)
     }
 
     setActive (i) {
