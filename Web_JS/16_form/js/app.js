@@ -36,7 +36,7 @@ export function app() {
     // Definir manejadores
 
     form.addEventListener('submit', onSubmit)
-    aDlgBtn.addEventListener('click', onClickDlg) //
+    aDlgBtn.forEach(btn => btn.addEventListener('click', onClickDlg)) //
 
     // funciones manejadoras de evento
 
@@ -78,7 +78,7 @@ export function app() {
             }
         }
 
-        function onClickDlg(ev) {
+        function onClickDlg (ev) {
 
             if(ev.target.textContent.toLowerCase() === 'Sí') {
 
