@@ -15,15 +15,30 @@
         <h1>JS en la Web</h1>
     </header>
 <main>
-
+    <form action="">
         <fieldset id="Datos_del_curso">
-                <legend>Datos del curso</legend>
+            <legend>Datos del curso</legend>
+            <div>
+                
                 <label for="techs" class="form_label">Tecnologias</label>
                 <select name="techs" id="techs" class="form_control" required>
                     <option value="">Elige una tecnologia</option>
-                    <optgroup label="Font-end">
                         <option value="">F</option>
                         <option value="">B</option>
+                </select>
+            </div>
+            <p class="error" hidden></p>   
+            <div>
+                <label for="curso" class="form_label">Curso</label>
+                <!-- <select name="curso" id="curso" class="form_control" multiple size="8"> -->
+                <select name="curso" id="curso" 
+                class="form_control" disabled required> 
+                    <option value="">Elige un curso</option>
+                </select>
+            </div>
+            <p class="error" hidden></p>               
+        </fieldset>
+    </form>
                         
                         
 
