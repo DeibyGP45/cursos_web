@@ -1,6 +1,6 @@
 let x = 34
 /* x = 5 */
-console.log(x >= 0)
+console.log(x >= 0) // true
 
 if (x >= 0) {
     
@@ -11,7 +11,7 @@ else {
 
     console.log('negativo')
 }
-
+ 
 let w 
 //Falsy
 w = false
@@ -53,28 +53,28 @@ k = [4, 8]
 
 /* console.log (number(k)) */
 
-let q = 5
+let q = 5 //Numero q
 
-if (q != 0) {
+if (q != 0) { //Si no es 0 ...
 console.log('q tiene valor')
 
 } else{
     console.log('q es 0')
 }
 
-if (q === 0) {
+if (q === 0) { //Si q es exactamente 0 ...
     console.log('q es exactamente 0')
     
     }
 
-    var nota = 0 
+    var nota = 0 // Numero Nota
 
     /* if (nota == 0) {
 
         console.log('Has sacado la nota minima')
     } */
 
-    if (nota != true) {
+    if (nota != true) { //Si nota no es true (1)
  console.log('Has sacado la nota minima')    
     }
 
@@ -82,7 +82,7 @@ if (q === 0) {
     let b = Boolean(nota) */
 
 
-    let edad = 53
+    let edad = 23 //Valor edad
 
 
 /** Separacion de responsabilidades */
@@ -111,4 +111,4 @@ console.log(`Con ${edad} años`,mensaje[codificar(edad)])
 
 let e = 23
 
-responder(e)
+responder(e) // Con 23 años Eres Joven
