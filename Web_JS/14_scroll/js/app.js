@@ -1,10 +1,10 @@
-import arboles from './imagenes.json.js'
+import arboles from './imagenes.json.js' //Exportar imagen a la pagina 
 
 export function app () {
     console.log('ddd')
 
 
-    let aImagenes = arboles.map( item => {
+    let aImagenes = arboles.map( item => { //Funcion map para repartir las imagenes 
 
 
         const img = new Image()
