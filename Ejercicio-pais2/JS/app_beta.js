@@ -8,19 +8,22 @@ window.addEventListener('scroll', onScroll)
 
 let header = document.querySelector('.main_header')
 
-let isSticky = false
+let isSticky = false;
 
 function onScroll(ev) {
     let y = ev.target.scrollingElement.scrollTop
 
     console.log(y)
 
-    if (y >= 40 && !isSticky) {
+    if (y >= 120 && !isSticky) {
 
-        header.classList.add()
+        header.classList.add('sticky')
+        isSticky = !isSticky
+        console.log('Activado')
         
-    } else {
-        
+    } else if (y < 120 && isSticky){
+        header.classList.remove('sticky')
+        console.log('Desactivado')
     }
 }
 

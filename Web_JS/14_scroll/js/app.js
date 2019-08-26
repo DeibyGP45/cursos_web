@@ -75,11 +75,13 @@ export function app () {
                 header.children[0]
                 divTop.classList.add('top-sticky')
                 isSticky = !isSticky
+                console.log('Activado')
                 calcularOffset()
             } else if (y < 40 && isSticky ) {
 
                 header.classList.remove('sticky')
                 divTop.classList.remove('top-sticky')
+                console.log('Desactivado')
                 calcularOffset()
                 isSticky = !isSticky
         }
