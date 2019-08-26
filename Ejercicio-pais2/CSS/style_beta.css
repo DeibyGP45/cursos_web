@@ -183,6 +183,8 @@ height: 100%;
     /* boton */
 
     .subir {
+        color: inherit;
+        font-family: 'Righteous', cursive;
         border:2px solid #F44712;
         text-decoration: none;
         padding: 0.5rem 2rem;
@@ -204,7 +206,6 @@ height: 100%;
 /* carteles */
 
 .carteles a {
-    color: inherit;
     text-decoration: none;
 }
     .cartel_malmo {
