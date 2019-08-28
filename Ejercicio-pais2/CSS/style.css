@@ -132,6 +132,7 @@ tr:nth-last-of-type(odd) {
 /* VIDEO YOUTUBE RESPONSIVE */
 
 .video-responsive {
+    margin: 1rem 0rem ;
     position: relative;
     padding-bottom: 56.25%; /* 16/9 ratio */
     padding-top: 30px; /* IE6 workaround*/
