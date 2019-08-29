@@ -13,6 +13,10 @@ export class App {
 
         this.outResult = document.querySelector('#outResult')
 
+        this.frase = document.querySelector('#frase')
+
+        
+
         
         
 
