@@ -18,7 +18,6 @@ export class App {
         
 
         
-        
 
         this.aBtns.forEach( (btn) => {btn.addEventListener('click', this.onBtnClick.bind(this))})
 
@@ -39,6 +38,7 @@ onBtnClick(evento) {
                 console.log(this.inNumberTotal)
 
             message = `El área del cuadrado es ${totalCuadrado} m2`
+            this.frase.classList.add('frase')
             break;
 
         case 'aTriangulo':
@@ -50,6 +50,10 @@ onBtnClick(evento) {
             
                     message = `El área del triangulo 🔺 es ${totalTriangulo} m2`
 
+                    this.frase.classList.remove('frase')
+
+
+
 
             break;
         case 'aCirculo':
@@ -58,6 +62,8 @@ onBtnClick(evento) {
                 let totalCirculo = Math.round(Math.PI * (n * n))
 
                     message = `El área del circulo es ${totalCirculo} m2`
+                    this.frase.classList.add('frase')
+                    
             break;    
         default:
             message = 'Boton sin funcionar'
