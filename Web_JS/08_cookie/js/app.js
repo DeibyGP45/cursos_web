@@ -13,6 +13,12 @@ export function app() {
 
     aBotones.forEach((btn) => { btn.addEventListener('click', onClick) });
 
+    /* let numVisitas  = getCookie('visitas');
+    console.log(numVisitas)
+    if (numVisitas !== '') {
+        setCookie("visitas", ++numVisitas, 5);
+    } */
+
     checkCookie('visitas')
 
 
@@ -29,6 +35,7 @@ export function app() {
                 setCookie('visitas', 0 , -2)
                 break;
             case 'Mostrar':
+            /* output.value = numVisitas */
                 break;
             default:
                 location.reload()
