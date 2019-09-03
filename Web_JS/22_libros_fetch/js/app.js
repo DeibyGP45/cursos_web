@@ -2,7 +2,7 @@
 export function app() {
     console.log("Cargada app")
 
-    const usersURL = 'https://jsonplaceholder.typicode.com/users/'
+    const usersURL = 'https://www.googleapis.com/books/v1/volumes?maxResults=20&fields=items(volumeInfo(authors%2Ctitle))&q='
 
 
     const store = 'userName'
@@ -45,22 +45,38 @@ export function app() {
         ///ES2017
 
     async function onClickBuscar2017(ev) {
-        let url = usersURL + '/' + inId.value
-
+        let url = usersURL + inId.value
+        console.log(url)
+                   
         try {
 
             let response = await fetch(url)
 
             if (response.status == 200) {
                 let data = await response.json()
-                spanSaludo.innerHTML = data.username
+                spanSaludo.innerHTML = data.items.map( item => 
+
+
+                    `<li class="titulo">
+
+                    ${item.volumeInfo.title}
+
+                        <p class="autor">${item.volumeInfo.authors.join(' & ')}</p>
+
+                        </li>`
+                    
+                    ).join('')
+
+
+                //items.volumeInfo.title
+                //
             } else {
                 //spanSaludo.innerHTML = ', hay un error de conexion'
                 throw (new Error(response.status))
             }
         } catch (error) {
 
-            spanSaludo.innerHTML = ', datos no encontrados, Error:' + error
+            spanSaludo.innerHTML = `<p>:(</p>` + error
         }
 
 
@@ -83,7 +99,6 @@ export function app() {
 
 
 
-                console.log(data)
                 if (data) {
 
                 } else if (http.readyState == 4) {
