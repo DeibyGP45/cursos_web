@@ -23,11 +23,7 @@ export function app() {
 
     btnBorrar.addEventListener('click', onClickBorrar)
 
-    //inNombre.addEventListener('input', onInputNombre)
-
-    //**inNombre.addEventListener('change', onChangeNombre)
-
-
+    inId.addEventListener('change', onClickBuscar2017)
 
     // funciones de manejadores de eventos
 
@@ -37,24 +33,21 @@ export function app() {
         spanSaludo.innerHTML = inId.value
     }
 
-    /* function onInputNombre (ev) {
-        
-        spanSaludo.innerHTML = ev.target.value
-    } */
 
-        ///ES2017
+    ///ES2017
 
     async function onClickBuscar2017(ev) {
         let url = usersURL + inId.value
         console.log(url)
-                   
+
         try {
 
             let response = await fetch(url)
 
             if (response.status == 200) {
                 let data = await response.json()
-                spanSaludo.innerHTML = data.items.map( item => 
+                console.log(data)
+                spanSaludo.innerHTML = data.items.map(item =>
 
 
                     `<li class="titulo">
@@ -64,8 +57,8 @@ export function app() {
                         <p class="autor">${item.volumeInfo.authors.join(' & ')}</p>
 
                         </li>`
-                    
-                    ).join('')
+
+                ).join('')
 
 
                 //items.volumeInfo.title
@@ -74,12 +67,11 @@ export function app() {
                 //spanSaludo.innerHTML = ', hay un error de conexion'
                 throw (new Error(response.status))
             }
-        } catch (error) {
+        }
+        catch (error) {
 
             spanSaludo.innerHTML = `<p>:(</p>` + error
         }
-
-
     }
 
     ///AJAX
@@ -89,26 +81,14 @@ export function app() {
 
     function leerDatos(http) {
 
-        /* if (http.readyState == 4 && ) {
-            
-        } */
-
         if (http.readyState == 4) {
 
             if (http.status == 200) {
-
-
-
                 if (data) {
-
                 } else if (http.readyState == 4) {
-
                 }
             } else {
-
                 spanSaludo.innerHTML = ', tenemos un problema'
-
-
             }
         }
 
