@@ -6,8 +6,13 @@ export function app() {
 
     let aUsers = []
 
-    getDatos()
 
+        let cabecera = new Headers({
+                'Content-Type': 'application/json'
+            }) 
+
+    getDatos()
+    
     ///Nodos DOM
 
 
@@ -36,9 +41,7 @@ export function app() {
             edad: aInputs[1].value
         }
         console.log(oUser)
-        let cabecera = new Headers({
-            'Content-Type': 'application/json'
-        })
+
 
         fetch(USERS, {
             method: 'POST',
@@ -47,7 +50,7 @@ export function app() {
         }).then( response => response.json())
         .then( data => {
                 if(data.id > 0) {
-
+                    getDatos()
                 }
         } )
     }
@@ -60,11 +63,23 @@ export function app() {
         } else {
             ev.target.parentElement.dataset.id
         }
+
+        let url = USERS +'/'+userActual.id
+            fetch(url, {method: 'PUT',
+                    headers:  })
+            .then( response	=> response.json())
+            then( () => getDatosAwait()  )
     }
 
     function onBorrar(ev) {
         console.log('borrar', ev.target.dataset.id)
+     
+            let url = USERS +'/'+userActual.id
+            fetch(url, {method: 'DELETE'})
+            .then( response	=> response.json())
+            then( () => getDatosAwait()  )
     }
+    dlgBorrar.close()
 
 
     function getDatos() {
@@ -76,6 +91,11 @@ export function app() {
             })
 
     }
+        async function getDatosAwait() {
+            let response = await fetch(USERS)
+            aUsers = await response.json()
+            renderData()
+        }
 
 
     ///ES2017
@@ -112,8 +132,8 @@ export function app() {
 
 
 
-        btnBorrar.forEach(item => addEventListener('click', onBorrar))
-        btnEditar.forEach(item => addEventListener('click', onEditar))
+        btnBorrar.forEach(item => addEventListener('click', openModal))
+        btnEditar.forEach(item => addEventListener('click', openModal))
 
     }
 
@@ -121,13 +141,4 @@ export function app() {
         pError.innerHTML = 'error de conexión: ' + error
     }
 
-
-    function ajax(metodo, callback) {
-        const http = new XMLHttpRequest()
-        http.addEventListener('readystatechange', () => { callback(http) })
-
-        http.open(metodo, url)
-        http.send()
-
-    }
 }

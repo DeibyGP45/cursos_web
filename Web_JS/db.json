@@ -1,10 +1,30 @@
 {
-  
   "users": [
-    {"id" :  1, "nombre" : "Pepe", "edad": 33},
-    {"id" :  2, "nombre" : "Ernesto", "edad": 23},
-    {"id" :  3, "nombre" : "Rosa", "edad": 17},
-    {"id" :  4, "nombre" : "Luis", "edad": 25}
+    {
+      "id": 1,
+      "nombre": "Pepe",
+      "edad": 33
+    },
+    {
+      "id": 2,
+      "nombre": "Ernesto",
+      "edad": 23
+    },
+    {
+      "id": 3,
+      "nombre": "Rosa",
+      "edad": 17
+    },
+    {
+      "id": 4,
+      "nombre": "Luis",
+      "edad": 25
+    },
+    {
+      "nombre": "Maria",
+      "edad": "43",
+      "id": 5
+    }
   ],
   "posts": [
     {
