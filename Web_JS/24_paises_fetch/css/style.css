@@ -1,7 +1,7 @@
 * {margin:0}
 
 body{
-    background-color: antiquewhite;
+    background-color: #FCD0A1;
     font-family: Verdana;
     
 
@@ -10,7 +10,7 @@ body{
 
 body>header{
 
-    background-color: #EC7357;
+    background-color: #6D1A36;
     color: white;
     padding: 2rem;
     display: flex;
@@ -197,4 +197,30 @@ span li {
 
     margin: 0;
     max-width: 50%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+img {
+    border: #EC7357 15px solid;
+}
+
+div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #6D1A36 1px solid;
+}
+
+.info-pais {
+
+    border: #EC7357 5px solid;
 }

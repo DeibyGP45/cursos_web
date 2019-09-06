@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +10,34 @@
 
     <title>JS en la web</title>
 </head>
+
 <body>
     <header>
         <h1>JS en la Web</h1>
     </header>
     <main>
 
-        <select type="select" name="in-id" id="in-id">
-            <option value="">Elige continente</option>
-            <optgroup label="Selecciona:">
-            <option value="Europe">Europa</option>
-            <option value="Africa">África</option>
-            <option value="Americas">America</option>
-            <option value="Asia">Asia</option>
-            <option value="Oceania">Oceania</option>
-        </select>
+        <section>
+            <h2>Seleciona continente</h2>
+            <select type="select" name="in-id" id="in-id">
+                <option value="">Elige continente</option>
+                <optgroup label="Selecciona:">
+                    <option value="Europe">Europa</option>
+                    <option value="Africa">África</option>
+                    <option value="Americas">America</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Oceania">Oceania</option>
+            </select>
+        </section>
+        <section>
+            <h2>Seleciona país</h2>
+            <select id="span_pais" class="opt_pais"></select>
+        </section>
+        <section class="info-pais">
+            <div id="bandera-pais"></div>
 
-        <select id="span_pais" class="opt_pais"></select>
-        <p id="bandera-pais"></p>
+        </section>
 
-    
 
 
         </select>
@@ -41,6 +50,7 @@
             David Garcia
         </address>
     </footer>
-    
+
 </body>
+
 </html>
