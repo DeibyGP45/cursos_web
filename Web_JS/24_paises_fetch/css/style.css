@@ -192,3 +192,9 @@ color:rgb(197, 0, 0);
 span li {
     margin: 1rem 0
 }
+
+.bandera {
+
+    margin: 0;
+    max-width: 50%;
+}

@@ -4,90 +4,63 @@ export function app() {
 
     const usersURL = 'https://restcountries.eu/rest/v2/region/'
 
+    const imgPais = 'https://restcountries.eu/data/'
 
-    const store = 'userName'
 
     ///Nodos DOM
 
-    //let btnBorrar = document.querySelector('#btn_borrar')
 
     let inId = document.querySelector('#in-id')
+    console.log(inId)
 
-    let btnBuscar = document.querySelector('#btn_buscar')
 
-    let spanSaludo = document.querySelector('#span_saludo')
+    let optPais = document.querySelector('#span_pais')
 
-    let selectPais = document.querySelectorAll('#span_saludo option')
-
-    let banderaPais = document.querySelector('#bandera-pais')
 
     //Asociación de manejadores de eventos
 
-    btnBuscar.addEventListener('click', onClickPais)
 
     inId.addEventListener('change', onClickPais)
 
-    selectPais.addEventListener('click', onclickBandera)
-
-
-    //inId.addEventListener('change', onClickBuscar2017)
-
     // funciones de manejadores de eventos
 
-
-    ///ES2017
-
-    async function onClickPais(ev) {
+    async function onClickPais() {
         let url = usersURL + inId.value
         console.log(url)
 
-        try {
 
-            let response = await fetch(url)
+        let response = await fetch(url)
 
-            if (response.status == 200) {
-                let data = await response.json()
+        let data = await response.json()
 
-                data = data.map( item =>  `<option id="${item.name}">${item.translations.es}</option>`)
 
-                spanSaludo.innerHTML = '<option value="">Elige pais:</option>' +  data
+        data = data.map(item => `<option  value="${item.alpha3Code.toLowerCase()}">${item.translations.es}</option>`)
 
-                
-           
-            } else {
-                //spanSaludo.innerHTML = ', hay un error de conexion'
-                throw (new Error(response.status))
-            }
+        optPais.innerHTML = '<option value="">Elige pais:</option>' + data
+
+        //String.toLowerCase()
+
+        let selectPais = document.querySelector('.opt_pais')
+
+        let banderaPais = document.querySelector('#bandera-pais')
+
+        selectPais.addEventListener('change', onclickBandera)
+
+
+        async function onclickBandera() {
+
+            console.log(selectPais.value)
+
+            let url = imgPais + selectPais.value + '.svg'
+
+            console.log(url)
+
+            let data = `<img class="bandera" src="${url}"></img>`
+
+            console.log(data)
+
+            banderaPais.innerHTML = data
         }
-        catch (error) {
-            spanSaludo.innerHTML = ''
-        }
-    }
-    
-    async function onclickBandera(ev) {
-        let url = usersURL + inId.value
-        console.log(url)
 
-        try {
-
-            let response = await fetch(url)
-
-            if (response.status == 200) {
-                let data = await response.json()
-
-                data = data.map( item =>  `<option id="${item.name}">${item.translations.es}</option>`)
-
-                banderaPais.innerHTML = '<option value="">Elige pais:</option>' +  data
-
-                
-           
-            } else {
-                //banderaPais.innerHTML = ', hay un error de conexion'
-                throw (new Error(response.status))
-            }
-        }
-        catch (error) {
-            banderaPais.innerHTML = ''
-        }
     }
 }
