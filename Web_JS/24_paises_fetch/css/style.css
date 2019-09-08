@@ -30,6 +30,8 @@ body>header{
 
 h1 {text-align: center;}
 
+h2{margin: 0.5 rem 0rem}
+
 main {
     margin: 1rem;
     min-height: 200vh
@@ -208,7 +210,9 @@ section {
 }
 
 img {
-    border: #EC7357 15px solid;
+    /* border: #EC7357 15px solid; */
+    height: 100%;
+    width: 100%;
 }
 
 div {

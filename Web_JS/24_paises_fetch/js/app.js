@@ -13,8 +13,7 @@ export function app() {
 
 
     let inId = document.querySelector('#in-id')
-    console.log(inId)
-
+    //console.log(inId)
 
     let optPais = document.querySelector('#span_pais')
 
@@ -23,22 +22,21 @@ export function app() {
     //Asociación de manejadores de eventos
 
 
-    inId.addEventListener('change', onClickPais)
-
-
+        inId.addEventListener('change', onClickPais)
 
 
     // funciones de manejadores de eventos
 
     async function onClickPais() {
+
         let url = usersURL + inId.value
 
-        console.log(url)
+        //console.log(url)
 
 
         let response = await fetch(url)
 
-        console.log(response)
+        //console.log(response)
 
         let data = await response.json()
 
@@ -63,16 +61,16 @@ export function app() {
 
         async function onclickBandera() {
 
-            console.log(selectPais.value)
+            //console.log(selectPais.value)
 
             let url = imgPais + selectPais.value + '.svg'
 
-            console.log(url)
+            //console.log(url)
 
             let data = 
                         `<img class="bandera" src="${url}"></img>`
 
-            console.log(data)
+            //console.log(data)
 
             banderaPais.innerHTML = data
         }
@@ -82,15 +80,15 @@ export function app() {
 
             let url = infoURL + selectPais.value
 
-            console.log(url)
+           // console.log(url)
 
             let response = await fetch(url)
 
-            console.log(response)
+            //console.log(response)
 
             let data = await response.json()
 
-            console.log(data.languages[0].name)
+            //console.log(data.languages[0].name)
 
 
             data = 
@@ -99,23 +97,23 @@ export function app() {
 
                 <table>
                     <tr>
-                        <th>Capital</th>
+                        <th>Capital:</th>
                         <td>${data.capital}</td>
                     </tr>
                     <tr>
-                        <th>Población</th>
+                        <th>Población:</th>
                     <td>${data.population}</td>
                     </tr>
                     <tr>
-                        <th>Idioma</th>
+                        <th>Idioma:</th>
                         <td>${data.languages[0].name}</td>
                     </tr>
                     <tr>
-                        <th>Región</th>
+                        <th>Región:</th>
                         <td>${data.region}</td>
                     </tr>
                     <tr>
-                        <th>Subregión</th>
+                        <th>Subregión:</th>
                         <td>${data.subregion}</td>
                     </tr>
                 </table>
