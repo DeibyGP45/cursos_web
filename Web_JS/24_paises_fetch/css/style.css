@@ -217,10 +217,18 @@ div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: #6D1A36 1px solid;
+    /* border: #6D1A36 1px solid; */
+    padding: 1rem;
+    
 }
 
 .info-pais {
 
     border: #EC7357 5px solid;
+    background-color: white;
+    padding: 1rem;
+}
+
+table tr {
+    border: #6D1A36 1px solid
 }

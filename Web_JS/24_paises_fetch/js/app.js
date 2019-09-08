@@ -6,6 +6,8 @@ export function app() {
 
     const imgPais = 'https://restcountries.eu/data/'
 
+    const infoURL = 'https://restcountries.eu/rest/v2/alpha/'
+
 
     ///Nodos DOM
 
@@ -17,19 +19,26 @@ export function app() {
     let optPais = document.querySelector('#span_pais')
 
 
+
     //Asociación de manejadores de eventos
 
 
     inId.addEventListener('change', onClickPais)
 
+
+
+
     // funciones de manejadores de eventos
 
     async function onClickPais() {
         let url = usersURL + inId.value
+
         console.log(url)
 
 
         let response = await fetch(url)
+
+        console.log(response)
 
         let data = await response.json()
 
@@ -44,7 +53,12 @@ export function app() {
 
         let banderaPais = document.querySelector('#bandera-pais')
 
+
+        let infoDatos = document.querySelector('#info-datos')///
+
         selectPais.addEventListener('change', onclickBandera)
+
+        selectPais.addEventListener('change', onClickInfo)
 
 
         async function onclickBandera() {
@@ -55,12 +69,61 @@ export function app() {
 
             console.log(url)
 
-            let data = `<img class="bandera" src="${url}"></img>`
+            let data = 
+                        `<img class="bandera" src="${url}"></img>`
 
             console.log(data)
 
             banderaPais.innerHTML = data
         }
 
+
+        async function onClickInfo() {
+
+            let url = infoURL + selectPais.value
+
+            console.log(url)
+
+            let response = await fetch(url)
+
+            console.log(response)
+
+            let data = await response.json()
+
+            console.log(data.languages[0].name)
+
+
+            data = 
+                `<h3>${data.translations.es}</h3>
+                <p>${data.name}</p>
+
+                <table>
+                    <tr>
+                        <th>Capital</th>
+                        <td>${data.capital}</td>
+                    </tr>
+                    <tr>
+                        <th>Población</th>
+                    <td>${data.population}</td>
+                    </tr>
+                    <tr>
+                        <th>Idioma</th>
+                        <td>${data.languages[0].name}</td>
+                    </tr>
+                    <tr>
+                        <th>Región</th>
+                        <td>${data.region}</td>
+                    </tr>
+                    <tr>
+                        <th>Subregión</th>
+                        <td>${data.subregion}</td>
+                    </tr>
+                </table>
+                `
+
+        infoDatos.innerHTML = data
     }
+
+    }
+
 }
