@@ -1,6 +1,6 @@
 
 function main() {
-    const mensaje = 'Cargando app.js'
+    var mensaje = 'Cargando app.js'
     console.log(mensaje)
 }
 
