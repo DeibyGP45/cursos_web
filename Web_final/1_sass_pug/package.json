@@ -1,0 +1,23 @@
+{
+  "name": "1_sass_pug",
+  "version": "1.0.0",
+  "description": "Ejemplos del uso de SASS",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass sass/:css/ --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:w": "sass sass/:css/ --watch --no-source-map",
+    "pug:w": "pug -w -P -p ./pug/partials -O ./pug/options.json ./pug/templates -o ./",
+    "pug:sass": "parallelshell \"npm run pug:w\" \"npm run sass:w\"  "
+  },
+  "keywords": [],
+  "author": "Deiby",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "parallelshell": "3.0.1",
+    "pug": "^2.0.4",
+    "sass": "^1.22.12"
+  }
+}
