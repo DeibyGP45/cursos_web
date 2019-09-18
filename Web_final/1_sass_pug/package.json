@@ -13,7 +13,9 @@
   "keywords": [],
   "author": "Deiby",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "uglify-js": "^3.6.0"
+  },
   "devDependencies": {
     "node-sass": "^4.12.0",
     "parallelshell": "3.0.1",
